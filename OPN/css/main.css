@@ -136,12 +136,11 @@ html {
 }
 .abstract-section {
     height: auto;
-    font-size: 16px;
+    font-size: 18px;
     background: #ffffff;
     padding-left: 10px;
     padding-top: 40px;
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
-    margin-bottom: -80px;
 }
 .paper-section {
     height: auto;
@@ -150,7 +149,6 @@ html {
     padding-top: 40px;
     padding-bottom: 40px;
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
-    margin-bottom: -80px;
 }
 .network-section {
     height: auto;
@@ -161,14 +159,6 @@ html {
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
 .result-section {
-    height: auto;
-    font-size: 18px;
-    background: #ffffff;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
-}
-.model-section {
     height: auto;
     font-size: 18px;
     background: #ffffff;
