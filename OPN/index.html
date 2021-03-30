@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>DRIT</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!--<meta property="og:image" content="http://gph.is/2oZQz8h" />-->
+</head>
+<body>
+  
+  <div class="navbar-fixed">
+    <nav class="grey darken-4" role="navigation">
+      <div classi="nav-wrapper  container" >
+        <ul class="left hide-on-med-and-down">
+          <li><a class="page-scroll" href="#home">Home</a></li>
+          <li><a class="page-scroll" href="#abstract">Abstract</a></li>
+          <li><a class="page-scroll" href="#paper">Paper</a></li>
+          <li><a class="page-scroll" href="#models">Models</a></li>
+          <li><a class="page-scroll" href="#results">Results</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+  
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container scrollspy" id="home">
+
+      <h4 class="header center black-text">Diverse Image-to-Image Translation via</h4>
+      <h4 class="header center black-text">Disentangled Representations</h4>
+
+      <br>
+
+      <div class="row center no-pad-bot" style="margin-bottom:-100px">
+        <h5 class="header col m1 s12">
+        </h5>
+        <h5 class="header col m2 s12">
+          <div class="author"><a href="http://vllab.ucmerced.edu/hylee/" target="blank">Hsin-Ying Lee</a><sup>1*</sup></div>
+        </h5>
+
+        <h5 class="header col m2 s12">
+          <div class="author"><a href="https://sites.google.com/site/hytseng0509/" target="blank">Hung-Yu Tseng</a><sup>1*</sup></div>
+        </h5>
+
+        <h5 class="header col m2 s12">
+          <div class="author"><a href="https://filebox.ece.vt.edu/~jbhuang/" target="blank">Jia-Bin Huang</a><sup>2</sup></div>
+        </h5>
+
+        <h5 class="header col m2 s12">
+          <div class="author"><a href="https://scholar.google.com/citations?user=hdQhiFgAAAAJ" target="blank">Maneesh Singh</a><sup>3</sup></div>
+        </h5>
+
+        <h5 class="header col m3 s12">
+          <div class="author"><a href="http://faculty.ucmerced.edu/mhyang/" target="blank">Ming-Hsuan Yang</a><sup>1,4</sup></div>
+        </h5> 
+      </div>
+     <div class="row center" style="margin-top:-100px">
+        <h5 class="col m2 s12"></h5>
+        <h5 class="header col m2 s12">
+          <div class="school"><a href="http://www.ucmerced.edu/" target="blank"><sup>1</sup>UC, Merced</a></div>
+        </h5>
+        <h5 class="header col m2 s12">
+          <div class="school"><a href="http://www.vt.edu/" target="blank"><sup>2</sup>Virginia Tech</a></div>
+        </h5>
+        <h5 class="header col m2 s12">
+          <div class="school"><a href="http://www.verisk.com/" target="blank"><sup>3</sup>Verisk Analytics</a></div>
+        </h5>
+        <h5 class="header col m2 s12">
+          <div class="school"><a href="https://ai.google/research" target="blank"><sup>4</sup>Google Cloud</a></div>
+        </h5>
+    </div>
+    </div>
+
+  </div><br>
+        <div class="col s8 offset-s2 note" align="center"><i> Learning <span class="emphasis">diverse</span> image-to-image translation from <span class="emphasis">unpaired</span>  data </i></div>
+        <div class="publ center">
+          <ul>
+            <li><a href="../publication/ECCV18_DRIT.pdf">Paper</a></li>
+            <li><a href="http://github.com/HsinYingLee/DRIT">Code</a></li>
+          </ul>
+        </div>
+
+  <div class="container">
+
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row center">
+        <!--div class="col l8 offset-l2 m10 offset-m1 s12"-->
+        <div class="col s8 offset-s2 ">
+           <h5 class="note2">Diverse portrait photography to portrait painting translation</h5>
+        </div>
+        <div class="col-sm-12">
+          <img class="responsive-img" src="images/HungYuLittleGG.gif">
+        </div>
+      </div>
+      <div class="row center">
+        <div class="col-sm-10">
+          <img class="responsive-img" src="images/final.gif">
+        </div>
+      </div>
+      <div class="row center">
+        <!--div class="col l8 offset-l2 m10 offset-m1 s12"-->
+        <div class="col-sm-10">
+          <img class="responsive-img" src="images/teaser.png">
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+
+    <section id="abstract" class="abstract-section">
+    <div class="row section scrollspy">
+      <div class="title">Abstract</div>
+Image-to-image translation aims to learn the mapping between two visual domains.
+There are two main challenges for many applications: 1) the lack of aligned training pairs and 2) multiple possible outputs from a single input image. 
+In this work, we present a disentangled representation approach for producing diverse outputs without paired training images.
+To achieve diversity, we propose to map images onto two spaces: 1) a common content space capturing shared information across domains and 2) a domain-specific attribute space.
+We train a generator that takes encoded content features extracted from given inputs and attribute vectors randomly sampled from the attribute space to produce diverse outputs at test time.
+To handle unpaired training data, we propose a novel cross-cycle consistency based on disentangled representations.
+Qualitative results show that our model can generate diverse and realistic images on several tasks without paired data.
+For quantitative comparisons, we measure realism with user study and diversity with a perceptual distance metric.
+We apply the proposed model to domain adaptation and show competitive performance when compared to the state-of-the-art on the MNIST-M and the LineMod datasets.
+
+    </div>
+    </section>
+    <br>
+
+    <section id="paper" class="paper-section">
+    <div class="row section scrollspy">
+      <div class="title">Paper</div>
+      <br>
+      <div class="col s8 offset-s2">
+        <div id='paper-thumbnail'>
+          <a href="../publication/ECCV18_DRIT.pdf" target="_blank">
+            <img class="responsive-img" src="images/paper_thumbnail.png">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="subtitle">Citation</div>
+      <p>Hsin-Ying Lee*, Hung-Yu Tseng*, Jia-Bin Huang, Maneesh Kumar Singh, and Ming-Hsuan Yang, "Diverse Image-to-Image Translation via Disentangled Representations", in European Conference on Computer Vision, 2018.</p>
+      <p>* indicates equal contributions</p>
+      <br>
+      <div class="subtitle">Bibtex</div>
+      <pre>
+@inproceeding{DRIT,
+    author    = {Lee, Hsin-Ying and and Tseng, Hung-Yu and Huang, Jia-Bin and Singh, Maneesh Kumar and Yang, Ming-Hsuan}, 
+    title     = {Diverse Image-to-Image Translation via Disentangled Representations}, 
+    booktitle = {European Conference on Computer Vision},
+    year      = {2018}
+}</pre>
+
+    </div>
+    </section>
+
+    <section id="models" class="model-section">
+      <div class="title">Models</div>
+        <div> <h5 align='center'> Disentangled Representation Image-to-Image Translation (DRIT) </h5> </div>
+        <div class="col s6 offset-s3">
+          <img class="responsive-img" src="images/architecture_website.png">
+        </div>
+
+    </section>
+
+
+
+    <section id="results" class="result-section">
+    <div class="section row scrollspy">
+      <div class="title">Results</div>
+      <div>* Click to see results from different methods</div>
+
+      <div class="row center">
+        <div class="subtitle" id="Portrait">Portrait (photography) to Portrait (painting)</div>
+        <table class="centered">
+            <tbody>
+            <tr>
+                <td class="defaultmethod-tag four-columns" onclick="hover(this, 'Portrait')" id="DRIT" name="Portrait_DRIT" >DRIT (Ours)</td>
+                <!--td class="method-tag four-columns" onclick="hover(this, 'Portrait')" id="MUNIT" name="Portrait_MUNIT">MUNIT</td-->
+                <td class="method-tag four-columns" onclick="hover(this, 'Portrait')" id="CycleGAN" name="Portrait_CycleGAN">CycleGAN+noise</td>
+                <td class="method-tag four-columns" onclick="hover(this, 'Portrait')" id="CycleBicycle" name="Portrait_CycleBicycle">CycleGAN+BicycleGAN</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/Portrait/DRIT/1/concat.png" name="Portrait_1">
+        </div>
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/Portrait/DRIT/2/concat.png" name="Portrait_2">
+        </div>
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/Portrait/DRIT/3/concat.png" name="Portrait_3">
+        </div>
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/Portrait/DRIT/4/concat.png" name="Portrait_4">
+        </div>
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/Portrait/DRIT/5/concat.png" name="Portrait_5">
+        </div>
+      </div>
+      <div class="row center">
+        <div class="subtitle" id="Portrait">Yosemite Winter to Summer</div>
+        <table class="centered">
+            <tbody>
+            <tr>
+                <td class="defaultmethod-tag four-columns" onclick="hover(this, 'Yosemite')" id="DRIT" name="Yosemite_DRIT">DRIT (Ours)</td>
+                <!--td class="method-tag four-columns" onclick="hover(this, 'Yosemite')" id="MUNIT" name="Yosemite_MUNIT">MUNIT</td-->
+                <td class="method-tag four-columns" onclick="hover(this, 'Yosemite')" id="CycleGAN" name="Yosemite_CycleGAN">CycleGAN+noise</td>
+                <td class="method-tag four-columns" onclick="hover(this, 'Yosemite')" id="CycleBicycle" name="Yosemite_CycleBicycle">CycleGAN+BicycleGAN</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="row">
+          <img class="responsive-img " src="images/Demo/Yosemite/DRIT/1/concat.png" name="Yosemite_1">
+        </div>
+        <div class="row">
+          <img class="responsive-img " src="images/Demo/Yosemite/DRIT/2/concat.png" name="Yosemite_2">
+        </div>
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/Yosemite/DRIT/3/concat.png" name="Yosemite_3">
+        </div>
+        <div class="row">
+          <img class="responsive-img " src="images/Demo/Yosemite/DRIT/4/concat.png" name="Yosemite_4">
+        </div>
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/Yosemite/DRIT/5/concat.png" name="Yosemite_5">
+        </div>
+      </div>
+
+      <div class="row center">
+        <div class="subtitle" id="Portrait">Photo to Monet</div>
+        <table class="centered">
+            <tbody>
+            <tr>
+                <td class="defaultmethod-tag four-columns" onclick="hover(this, 'p2m')" id="DRIT" name="p2m_DRIT">DRIT (Ours)</td>
+                <!--td class="method-tag four-columns" onclick="hover(this, 'p2v')" id="MUNIT" name="p2v_MUNIT">MUNIT</td-->
+                <td class="method-tag four-columns" onclick="hover(this, 'p2m')" id="CycleGAN" name="p2m_CycleGAN">CycleGAN+noise</td>
+                <td class="method-tag four-columns" onclick="hover(this, 'p2m')" id="CycleBicycle" name="p2m_CycleBicycle">CycleGAN+BicycleGAN</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/p2m/DRIT/1/concat.png" name="p2m_1">
+        </div>
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/p2m/DRIT/2/concat.png" name="p2m_2">
+        </div>
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/p2m/DRIT/3/concat.png" name="p2m_3">
+        </div>
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/p2m/DRIT/4/concat.png" name="p2m_4">
+        </div>
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/p2m/DRIT/5/concat.png" name="p2m_5">
+        </div>
+
+    </div>
+
+      <div class="row center">
+        <div class="subtitle" id="Portrait">Cat to Dog</div>
+        <table class="centered">
+            <tbody>
+            <tr>
+                <td class="defaultmethod-tag four-columns"  id="DRIT" name="v2m_DRIT" >DRIT (Ours)</td>
+                <!--td class="method-tag four-columns" onclick="hover(this, 'v2m')" id="MUNIT" name="v2m_MUNIT">MUNIT</td-->
+                <!--td class="method-tag four-columns" onclick="hover(this, 'v2m')" id="CycleGAN" name="v2m_CycleGAN">CycleGAN+noise</td-->
+                <!--td class="method-tag four-columns" onclick="hover(this, 'v2m')" id="CycleBicycle" name="v2m_CycleBicycle">CycleGAN+BicycleGAN</td-->
+            </tr>
+            </tbody>
+        </table>
+        <div class="col s12">
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/c2d/DRIT/1/concat.png" name="c2d_1">
+        </div>
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/c2d/DRIT/2/concat.png" name="c2d_2">
+        </div>
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/c2d/DRIT/3/concat.png" name="c2d_3">
+        </div>
+        <div class="row">
+          <img class="responsive-img" src="images/Demo/c2d/DRIT/4/concat.png" name="c2d_4">
+        </div>
+    </div>
+
+    </section>
+
+
+   <section id="reference" class="reference-section">
+    <div class="row section scrollspy">
+      <div class="title">References</div>
+      <ul>
+        <li>&bull; 
+          Jun-Yan Zhu*, Taesung Park*, Phillip Isola, Alexei A. Efros <a href="https://arxiv.org/pdf/1703.10593.pdf" target="blank">"Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks"</a>. ICCV, 2017.
+        </li>
+        <li>&bull;
+          Jun-Yan Zhu, Richard Zhang, Deepak Pathak, Trevor Darrell, Alexei A. Efros, Oliver Wang, Eli Shechtman <a href="https://arxiv.org/abs/1711.11586.pdf" target="blank">"Toward Multimodal Image-to-Image Translation "</a>NIPS, 2017.
+        </li>
+        <li>&bull;
+         Xun Huang, Ming-Yu Liu, Serge Belongie, Jan Kautz <a href="https://arxiv.org/abs/1804.04732.pdf" target="blank">"MUNIT: Multimodal UNsupervised Image-to-image Translation </a>ECCV, 2018.
+        </li>
+      </ul>
+    </div>
+    </section>
+
+
+
+  </div>
+
+  <footer class="page-footer grey lighten-3">
+    
+    
+    <div class="footer-copyright center black-text">
+      Copyright © Hsin-Ying James Lee 2018
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/init.js"></script>  
+  <script src="js/materialize.js"></script>
+
+
+
+  </body>
+</html>
+
+
