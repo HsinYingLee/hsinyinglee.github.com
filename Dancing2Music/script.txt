@@ -1,0 +1,39 @@
+## Dataset
+### Content
+#### 3 zip files containing data of three dancing categories: Zumba, ballet, and hiphop.
+####1 zip files containing data statistics and data path lists for trainint usage.
+
+URL=http://vllab.ucmerced.edu/hylee/Dancing2Music/ballet.zip
+wget -N $URL -O ./ballet.zip
+unzip ./ballet.zip -d .
+rm ./ballet.zip
+
+URL=http://vllab.ucmerced.edu/hylee/Dancing2Music/zumba.zip
+wget -N $URL -O ./zumba.zip
+unzip ./zumba.zip -d .
+rm ./zumba.zip
+
+URL=http://vllab.ucmerced.edu/hylee/Dancing2Music/hiphop.zip
+wget -N $URL -O ./hiphop.zip
+unzip ./hiphop.zip -d .
+rm ./hiphop.zip
+
+URL=http://vllab.ucmerced.edu/hylee/Dancing2Music/data.zip
+wget -N $URL -O ./data.zip
+unzip ./data.zip -d .
+rm ./data.zip
+
+
+## Models
+### General
+URL=http://vllab.ucmerced.edu/hylee/Dancing2Music/Stage1.ckpt
+wget -N $URL
+
+URL=http://vllab.ucmerced.edu/hylee/Dancing2Music/Stage2.ckpt
+wget -N $URL
+
+### Class-specific
+URL=https://www.dropbox.com/s/1c7s7rn7z3pvhp9/Model_MY.zip
+wget -N $URL
+
+
