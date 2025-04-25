@@ -9,9 +9,10 @@ html {
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 80%;
+    width: 100%;
+    max-width: 1280px;  /* Match Materialize's container width */
+    margin: 0 auto;
+    padding: 0 20px;
 }
 @media only screen and (min-width: 601px)
   .container {
@@ -63,8 +64,9 @@ html {
   font-family: monospace;
 }
 .social-links {
- /* float: right;*/
- display: inline-block;
+    display: flex;
+    gap: 1.5rem;  /* Increased spacing between icons */
+    margin: 1rem 0;
 }
 .social{
   padding-right: 5px;
@@ -182,14 +184,231 @@ html {
   background-color: #555555 !important;
 }
 #home {
-    background: url(../images/SF.JPG) no-repeat fixed center;
-    height: auto;
+    background: url(../images/pano.jpg) no-repeat fixed center;
     width: 100%;
-    height: 70%;
-    margin: 0 0;
+    height: 450px;
+    margin: 0 0 50px 0;
     position: relative;
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
-    padding: 100px 0px;
+    padding: 30px 0px;
     background-size: cover;
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+.container-profile {
+    margin-top: 0;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.profile-content {
+    background: rgba(255, 255, 255, 0.95);  /* Slightly more opaque */
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.profile-content h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;  /* Dark blue-grey */
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.profile-content .title {
+    font-size: 1.4rem;
+    color: #34495e;  /* Slightly lighter blue-grey */
+    margin-bottom: 1rem;
+}
+
+.profile-content .email {
+    color: #7f8c8d;  /* Muted grey */
+    font-size: 1rem;
+}
+
+.profile-content .quick-bio {
+    color: #34495e;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+.social-links {
+    margin: 0.8rem 0;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.social-links img:hover {
+    opacity: 1;
+}
+
+/* Navigation styles */
+.nav-custom {
+    background-color: #2c3e50 !important;  /* Dark blue-grey */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 64px;
+}
+
+.nav-wrapper {
+    padding: 0 20px;
+}
+
+.nav-wrapper ul li a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9) !important;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nav-wrapper ul li a:hover {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Active link style */
+.nav-wrapper ul li a.active {
+    color: #ffffff !important;
+    border-bottom: 3px solid #ffffff;
+}
+
+/* Publication categories styling */
+.pub-categories {
+    margin: 2rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    background: white;
+    border: 1px solid #455a64;
+    padding: 8px 24px;
+    border-radius: 25px;
+    color: #455a64;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    min-width: 80px;
+}
+
+.category-btn:hover {
+    background: #f5f5f5;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.category-btn.active {
+    background: #455a64;
+    color: white;
+    border-color: #455a64;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Optional: Add a subtle animation when switching */
+.category-btn:active {
+    transform: translateY(1px);
+}
+
+/* Publication items animation */
+.pubwrap {
+    transition: all 0.3s ease;
+}
+
+.pubwrap.hidden {
+    display: none;
+}
+
+.social-icon img {
+    width: 48px;    /* Increased from 24px */
+    height: 48px;   /* Increased from 24px */
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+.social-icon:hover img {
+    opacity: 1;
+    transform: scale(1.1);  /* Subtle hover effect */
+}
+
+/* Optional: Add container padding to prevent icons from touching edges */
+.contact {
+    margin: 1.2rem 0;
+    padding: 0.5rem 0;
+}
+
+/* News section styles */
+.news-container {
+    display: flex;
+    gap: 60px;
+    margin-top: 20px;
+    width: 100%;  /* Match container width */
+}
+
+.news-column {
+    flex: 1;
+}
+
+.news-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.news-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
+
+.news-list li i {
+    margin-right: 12px;
+    margin-top: 4px;
+    color: #455a64;
+    flex-shrink: 0;
+}
+
+/* Fix spacing in news items */
+.news-list li b,
+.news-list li strong {
+    margin: 0;
+    padding: 0;
+    display: inline-block;  /* Changed to inline-block */
+}
+
+/* Ensure no space between "accepted to" and conference name */
+.news-list li {
+    word-spacing: normal;  /* Control word spacing */
+}
+
+/* Fix any potential HTML whitespace issues */
+.news-list li * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Make it responsive */
+@media screen and (max-width: 768px) {
+    .news-container {
+        flex-direction: column;
+        gap: 20px;
+        width: 95%;  /* Slightly wider on mobile */
+    }
+    
+    .news-list li {
+        margin-bottom: 12px;
+        white-space: normal;  /* Allow wrapping on mobile */
+    }
 }
