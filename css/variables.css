@@ -1,0 +1,26 @@
+:root {
+  /* Colors */
+  --primary-color: #26a69a;
+  --secondary-color: #900;
+  --text-color: #333;
+  --light-bg: #f7f7f7;
+  --dark-bg: #333;
+  --link-color: #0066cc;
+  
+  /* Typography */
+  --heading-font: 'Palatino Linotype', serif;
+  --body-font: 'Helvetica Neue', sans-serif;
+  --code-font: monospace;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  
+  /* Breakpoints */
+  --mobile: 600px;
+  --tablet: 900px;
+  --desktop: 1200px;
+} 

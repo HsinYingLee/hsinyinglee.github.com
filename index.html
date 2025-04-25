@@ -16,11 +16,11 @@
 <body id="page-top">
   <!-- Header -->
   <div class="navbar-fixed" >
-    <nav class="teal lighten-2" role="navigation">
+    <nav class="nav-custom" role="navigation">
       <div class="nav-wrapper" >
         <ul class="left hide-on-med-and-down">
           <li><a class="page-scroll" href="#page-top">Home</a></li>
-          <li><a class="page-scroll" href="#about">About</a></li>
+          <!-- <li><a class="page-scroll" href="#about">About</a></li> -->
           <li><a class="page-scroll" href="#news">News</a></li>
           <li><a class="page-scroll" href="#publication">Publication</a></li>
           <li><a class="page-scroll" href="#education">Education</a></li>
@@ -32,38 +32,43 @@
   <!-- Home -->
   <section id="home" data-speed="0" data-type="background" class="home-section">
       <div class="container-profile">
-
         <div class="row">
-          <div class="col s1"> </div>
-          <div class="col s3 profile-img">
-            <img src="images/me3.jpg" class="circle responsive-img" alt="Profile image">
+          <div class="col s12 m4 l3">
+            <img src="images/me3.jpg" class="circle responsive-img profile-img" alt="Profile image">
           </div>
-
-
-          <div class="col 8 profile-info">
-            <div><span class="english-name">Hsin-Ying Lee</span>
-            <div class="info-list">
-              <div>Researcher</div>
-              <!--div><a href="https://research.snap.com/team/category/creative-vision" target="blank" style="color:white">Creative Vision </a></div-->
-              <!--div><a href="https://research.snap.com/" target="blank" style="color:white">Snap Research</a></div-->
-              <!--div><a href="https://www.snap.com/en-US/" target="blank" style="color:white">Snap Inc.</a></div-->
-              <div class='email'>hsinyinglee.business [at] gmail.com</div>
+          
+          <div class="col s12 m8 l9">
+            <div class="profile-content">
+              <h1 class="name">Hsin-Ying Lee</h1>
+              <div class="title">Researcher</div>
+              <div class="contact">
+                <div class="email">hsinyinglee.business [at] gmail.com</div>
+                <div class="social-links">
+                  <a href="https://scholar.google.com/citations?user=SeozinYAAAAJ&hl=en" target="_blank" class="social-icon">
+                    <img src="icons/googlescholar.png" alt="Google Scholar">
+                  </a>
+                  <a href="https://github.com/HsinYingLee" target="_blank" class="social-icon">
+                    <img src="icons/github.png" alt="GitHub">
+                  </a>
+                  <a href="https://twitter.com/hyjameslee" target="_blank" class="social-icon">
+                    <img src="icons/twitter.png" alt="Twitter">
+                  </a>
+                </div>
+              </div>
+              
+              <div class="quick-bio">
+                <p>I am currently working on the intersection of AI, 3D, and architectural design.</p>
+                <p>I was a research scientist in the Creative Vision team at Snap Research from 2020 to 2025.</p>
+                <p>My research focuses on Computer Vision and Machine Learning, particularly in 2D/3D/4D generation and manipulation.</p>
+              </div>
             </div>
-            <div class="social-links">
-              <a href="https://scholar.google.com/citations?user=SeozinYAAAAJ&hl=en" target="_blank"><img src="icons/googlescholar.png" width="36px" class="responsive-img"> </a>
-              <a href="https://github.com/HsinYingLee" target="_blank"><img src="icons/github.png" width="36px" class="responsive-img"> </a>
-              <a href="https://twitter.com/hyjameslee" target="_blank"><img src="icons/twitter.png" width="36px" class="responsive-img"> </a>
-            </div>
-
           </div>
         </div>
-
       </div>
-
   </section>
 
   <!-- About -->
-  <section id="about" class="about-section">
+  <!-- <section id="about" class="about-section">
 
       <div class="container">
         <div class="row">
@@ -71,9 +76,6 @@
             <h4>About Me</h4>
             <hr>
             <div class="spacer"></div>
-            <p>
-              I am currently working on the intersection of AI, 3D, and architectural design.
-            </p>
             <p>
               I was a  research scientist in the <a href="https://research.snap.com/team/category/creative-vision" target="blank">Creative Vision team</a> at <a href="https://research.snap.com/" target="blank">Snap Research</a> from 2020 to 2025.
               I received my PhD degree in EECS at UC Merced under the advisement of Prof. <a href="http://faculty.ucmerced.edu/mhyang/" target="blank">Ming-Hsuan Yang</a> in 2020.
@@ -86,8 +88,8 @@
           </div>
 
         </div>
-      </div> <!-- end of Description -->
-    </section>
+      </div> --> <!-- end of Description -->
+    <!-- </section> -->
 
   <!-- News -->
   <section id="news" class="news-section">
@@ -97,37 +99,46 @@
           <h4>News</h4>
           <hr>
           <div class="spacer"></div>
-          <ul>
-            <li><i class="tiny material-icons">library_books</i> 01/2025: Four papers are accepted to <b>ICLR 2025 </b></li>
-            <li><i class="tiny material-icons">library_books</i> 09/2024: One papers is accepted to <b>NeurIPS 2024 </b></li>
-            <li><i class="tiny material-icons">library_books</i> 05/2024: One paper is accepted to <b>ECCV 2024 </b></li>
-            <li><i class="tiny material-icons">library_books</i> 02/2024: Four papers are accepted to <b>CVPR 2024 (1 Spotlight) </b></li>
-            <li><i class="tiny material-icons">library_books</i> 09/2023: One paper is accepted to <b>SIGGRAPH Asia 2023 </b></li>
-            <li><i class="tiny material-icons">library_books</i> 07/2023: Two papers are accepted to <b>ICCV 2023 </b></li>
-            <li><i class="tiny material-icons">library_books</i> 04/2023: One paper is accepted to <b>ICML 2023 </b></li>
-            <li><i class="tiny material-icons">library_books</i> 02/2023: Five papers are accepted to <b>CVPR 2023 (1 highlight)</b></li>
-            <li><i class="tiny material-icons">library_books</i> 01/2023: One paper is accepted to <b>ICLR 2023 (oral)</b></li>
-            <li><i class="tiny material-icons">library_books</i> 07/2022: Three papers are accepted to <b>ECCV 2022</b></li>
-            <li><i class="tiny material-icons">library_books</i> 12/2021: Two papers are accepted to <b>CVPR 2022</b></li>
-            <li><i class="tiny material-icons">library_books</i> 12/2021: One paper is accepted to <b>ICLR 2022</b></li>
-            <li><i class="tiny material-icons">library_books</i> 07/2020: <font color="green">Joining Snap Research!</font></li>
-            <li><i class="tiny material-icons">library_books</i> 07/2020: Four papers are accepted to <b>ECCV 2020 (1 spotlight)</b></li>
-            <li><i class="tiny material-icons">library_books</i> 12/2019: One paper is accepted to <b>ICLR 2020 (spotlight)</b></li>
-            <li><i class="tiny material-icons">library_books</i> 12/2019: One paper is accepted to <b>IJCV 2019</b></li>
-            <li><i class="tiny material-icons">library_books</i> 09/2019: One paper is accepted to <b>NeurIPS 2019</b></li>
-            <li><i class="tiny material-icons">library_books</i> 05/2019: <font color="green">Google Internship, MTV</font></li>
-            <li><i class="tiny material-icons">library_books</i> 04/2019: One paper is accepted to <b>ICIP 2019</b></li>
-            <li><i class="tiny material-icons">library_books</i> 02/2019: One paper is accepted to <b>CVPR 2019</b></li>
-            <li><i class="tiny material-icons">library_books</i> 12/2018: <font color="green">Google Internship, SNV</font></li>
-            <li><i class="tiny material-icons">library_books</i> 07/2018: Two papers are accepted to <b>ECCV 2018 (1 oral)</b></li>
-            <li><i class="tiny material-icons">library_books</i> 05/2018: <font color="green">Nvidia Internship, Santa Clara</font> Audio-Visual Modeling</li>
-            <li><i class="tiny material-icons">library_books</i> 07/2017: One paper is accepted to <b>ICCV 2017</b></li>
-            <li><i class="tiny material-icons">library_books</i> 05/2017: <font color="green">Google Internship, MTV</font> Video Highlights / Video Summarization</li>
-            <li><i class="tiny material-icons">library_books</i> 08/2016: Start my PhD at <a href="http://www.ucmerced.edu/" target="blank">UC Merced</a></li>
-          </ul>
-
+          <div class="news-container">
+            <div class="news-column">
+              <!-- First half of news items -->
+              <ul class="news-list">
+                <li><i class="tiny material-icons">library_books</i> 02/2025: Three papers are accepted to&nbsp;<b>CVPR 2025 (1 highlight)</b></li>
+                <li><i class="tiny material-icons">library_books</i> 01/2025: Four papers are accepted to&nbsp;<b>ICLR 2025</b></li>
+                <li><i class="tiny material-icons">library_books</i> 09/2024: One papers is accepted to&nbsp;<b>NeurIPS 2024 </b></li>
+                <li><i class="tiny material-icons">library_books</i> 05/2024: One paper is accepted to&nbsp;<b>ECCV 2024 </b></li>
+                <li><i class="tiny material-icons">library_books</i> 02/2024: Four papers are accepted to&nbsp;<b>CVPR 2024 (1 spotlight) </b></li>
+                <li><i class="tiny material-icons">library_books</i> 09/2023: One paper is accepted to&nbsp;<b>SIGGRAPH Asia 2023 </b></li>
+                <li><i class="tiny material-icons">library_books</i> 07/2023: Two papers are accepted to&nbsp;<b>ICCV 2023 </b></li>
+                <li><i class="tiny material-icons">library_books</i> 04/2023: One paper is accepted to&nbsp;<b>ICML 2023 </b></li>
+                <li><i class="tiny material-icons">library_books</i> 02/2023: Five papers are accepted to&nbsp;<b>CVPR 2023 (1 highlight)</b></li>
+                <li><i class="tiny material-icons">library_books</i> 01/2023: One paper is accepted to&nbsp;<b>ICLR 2023 (oral)</b></li>
+                <li><i class="tiny material-icons">library_books</i> 07/2022: Three papers are accepted to&nbsp;<b>ECCV 2022</b></li>
+                <li><i class="tiny material-icons">library_books</i> 12/2021: Two papers are accepted to&nbsp;<b>CVPR 2022</b></li>
+                <li><i class="tiny material-icons">library_books</i> 12/2021: One paper is accepted to&nbsp;<b>ICLR 2022</b></li>
+                <li><i class="tiny material-icons">library_books</i> 07/2020: &nbsp<font color="green">Joining Snap Research!</font></li>
+              </ul>
+            </div>
+            <div class="news-column">
+              <!-- Second half of news items -->
+              <ul class="news-list">
+                <li><i class="tiny material-icons">library_books</i> 07/2020: Four papers are accepted to&nbsp;<b>ECCV 2020 (1 spotlight)</b></li>
+                <li><i class="tiny material-icons">library_books</i> 12/2019: One paper is accepted to&nbsp;<b>ICLR 2020 (spotlight)</b></li>
+                <li><i class="tiny material-icons">library_books</i> 12/2019: One paper is accepted to&nbsp;<b>IJCV 2019</b></li>
+                <li><i class="tiny material-icons">library_books</i> 09/2019: One paper is accepted to&nbsp;<b>NeurIPS 2019</b></li>
+                <li><i class="tiny material-icons">library_books</i> 05/2019: &nbsp<font color="green">Google Internship, MTV</font></li>
+                <li><i class="tiny material-icons">library_books</i> 04/2019: One paper is accepted to&nbsp;<b>ICIP 2019</b></li>
+                <li><i class="tiny material-icons">library_books</i> 02/2019: One paper is accepted to&nbsp;<b>CVPR 2019</b></li>
+                <li><i class="tiny material-icons">library_books</i> 12/2018: &nbsp<font color="green">Google Internship, SNV</font></li>
+                <li><i class="tiny material-icons">library_books</i> 07/2018: Two papers are accepted to&nbsp;<b>ECCV 2018 (1 oral)</b></li>
+                <li><i class="tiny material-icons">library_books</i> 05/2018: &nbsp<font color="green">Nvidia Internship, Santa Clara</font>&nbspAudio-Visual Modeling</li>
+                <li><i class="tiny material-icons">library_books</i> 07/2017: One paper is accepted to&nbsp;<b>ICCV 2017</b></li>
+                <li><i class="tiny material-icons">library_books</i> 05/2017: &nbsp<font color="green">Google Internship, MTV</font>&nbspVideo Highlights / Video Summarization</li>
+                <li><i class="tiny material-icons">library_books</i> 08/2016: Start my PhD at &nbsp<a href="http://www.ucmerced.edu/" target="blank">UC Merced</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -138,1064 +149,21 @@
       <h4>Publications</h4>
       <hr>
       <div class="spacer"></div>
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/iclr25_delta.gif">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">DELTA: Dense Efficient Long-range 3D Tracking for Any video</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Tuan Duc Ngo, Peiye Zhuang, Evangelos Kalogerakis, Chuang Gan, Sergey Tulyakov, Hsin-Ying Lee, Chaoyang Wang</div>
-              <div class="pubv">ICLR 2025</div>
-              <div class="publ">
-                  <li><a href="https://arxiv.org/abs/2410.24211">Paper</a></li>
-                  <li><a href="https://snap-research.github.io/DELTA/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      
+      <!-- Publication Categories -->
+      <div class="pub-categories">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="image">Image</button>
+        <button class="category-btn" data-category="video">Video</button>
+        <button class="category-btn" data-category="3d">3D/4D</button>
+        <button class="category-btn" data-category="other">Others</button>
       </div>
 
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/iclr25_vd3d.gif">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">VD3D: Taming Large Video Diffusion Transformers for 3D Camera Control</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Sherwin Bahmani, Ivan Skorokhodov, Aliaksandr Siarohin, Willi Menapace, Guocheng Qian, Michael Vasilkovsky, Hsin-Ying Lee, Chaoyang Wang, Jiaxu Zou, Andrea Tagliasacchi, David B. Lindell, Sergey Tulyakov</div>
-              <div class="pubv">ICLR 2025</div>
-              <div class="publ">
-                  <li><a href="https://arxiv.org/abs/2407.12781">Paper</a></li>
-                  <li><a href="https://snap-research.github.io/vd3d/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/iclr25_gtr.gif">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">GTR: Improving Large 3D Reconstruction Models through Geometry and Texture Refinement</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Peiye Zhuang, Songfang Han, Chaoyang Wang, Aliaksandr Siarohin, Jiaxu Zou, Michael Vasilkovsky, Vladislav Shakhrai, Sergei Korolev, Sergey Tulyakov, Hsin-Ying Lee</div>
-              <div class="pubv">ICLR 2025</div>
-              <div class="publ">
-                  <li><a href="https://openreview.net/pdf?id=Oxpkn0YLG1">Paper</a></li>
-                  <li><a href="https://snap-research.github.io/GTR/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/iclr25_3ditscene.gif">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">3DitScene: Editing Any Scene via Language-guided Disentangled Gaussian Splatting</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Qihang Zhang, Yinghao Xu, Chaoyang Wang, Hsin-Ying Lee, Gordon Wetzstein, Bolei Zhou, Ceyuan Yang</div>
-              <div class="pubv">ICLR 2025</div>
-              <div class="publ">
-                  <li><a href="https://arxiv.org/abs/2405.18424">Paper</a></li>
-                  <li><a href="https://zqh0253.github.io/3DitScene/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/4real.gif">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Heng Yu, Chaoyang Wang, Peiye Zhuang, Willi Menapace, Aliaksandr Siarohin, Junli Cao, Laszlo A Jeni, Sergey Tulyakov, Hsin-Ying Lee</div>
-              <div class="pubv">NeurIPS 2024</div>
-              <div class="publ">
-                  <li><a href="https://arxiv.org/abs/2406.07472">Paper</a></li>
-                  <li><a href="https://snap-research.github.io/4Real/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/upfusion.gif">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">UpFusion: Novel View Diffusion from Unposed Sparse View Observations</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Bharath Raj Nagoor Kani, Hsin-Ying Lee, Sergey Tulyakov, Shubham Tulsiani</div>
-              <div class="pubv">ECCV 2024</div>
-              <div class="publ">
-                  <li><a href="https://arxiv.org/pdf/2312.06661">Paper</a></li>
-                  <li><a href="https://upfusion3d.github.io/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/scenetex.gif">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Scenetex: High-quality texture synthesis for indoor scenes via diffusion priors</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Dave Zhenyu Chen, Haoxuan Li, Hsin-Ying Lee, Sergey Tulyakov, Matthias Nießner</div>
-              <div class="pubv">CVPR 2024</div>
-              <div class="publ">
-                  <li><a href="https://daveredrum.github.io/SceneTex/static/SceneTex.pdf">Paper</a></li>
-                  <li><a href="https://daveredrum.github.io/SceneTex/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/panda.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Panda-70M: Captioning 70M Videos with Multiple Cross-Modality Teachers</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Tsai-Shien Chen, Aliaksandr Siarohin, Willi Menapace, Ekaterina Deyneka, Hsiang-wei Chao, Byung Eun Jeon, Yuwei Fang, Hsin-Ying Lee, Jian Ren, Ming-Hsuan Yang, Sergey Tulyakov</div>
-              <div class="pubv">CVPR 2024</div>
-              <div class="publ">
-                  <li><a href="https://arxiv.org/abs/2402.19479">Paper</a></li>
-                  <li><a href="https://snap-research.github.io/Panda-70M/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/scenewiz.gif">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Scenewiz3d: Towards text-guided 3d scene composition </div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Qihang Zhang, Chaoyang Wang, Aliaksandr Siarohin, Peiye Zhuang, Yinghao Xu, Ceyuan Yang, Dahua Lin, Bolei Zhou, Sergey Tulyakov, Hsin-Ying Lee</div>
-              <div class="pubv">CVPR 2024</div>
-              <div class="publ">
-                  <li><a href="https://zqh0253.github.io/SceneWiz3D/media/scenewiz3d.pdf">Paper</a></li>
-                  <li><a href="https://zqh0253.github.io/SceneWiz3D/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/dmp.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Exploiting Diffusion Prior for Generalizable Pixel-Level Semantic Prediction </div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Hsin-Ying Lee, Hsin-Ying Lee, Hung-Yu Tseng, Ming-Hsuan Yang</div>
-              <div class="pubv">CVPR 2024</div>
-              <div class="publ">
-                  <li><a href="https://arxiv.org/abs/2311.18832">Paper</a></li>
-                  <li><a href="https://shinying.github.io/dmp/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/text2cine.gif">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Text-Guided Synthesis of Eulerian Cinemagraphs </div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Aniruddha Mahapatra, Aliaksandr Siarohin, Hsin-Ying Lee, Sergey Tulyakov, Jun-Yan Zhu</div>
-              <div class="pubv">SIGGRAPH Asia 2023</div>
-              <div class="publ">
-                  <li><a href="https://arxiv.org/abs/2307.03190">Paper</a></li>
-                  <li><a href="https://text2cinemagraph.github.io/website/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/text2tex.jpeg">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Text2tex: Text-driven texture synthesis via diffusion models</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Dave Zhenyu Chen, Yawar Siddiqui, Hsin-Ying Lee, Sergey Tulyakov, Matthias Nießner</div>
-              <div class="pubv">ICCV 2023</div>
-              <div class="publ">
-                  <li><a href="https://arxiv.org/abs/2303.11396">Paper</a></li>
-                  <li><a href="https://daveredrum.github.io/Text2Tex/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/infinicity.jpeg">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">InfiniCity: Infinite-Scale City Synthesis</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Chieh Hubert Lin, Hsin-Ying Lee, Willi Menapace, Menglei Chai, Aliaksandr Siarohin, Ming-Hsuan Yang, Sergey Tulyakov</div>
-              <div class="pubv">ICCV 2023</div>
-              <div class="publ">
-                  <li><a href="https://arxiv.org/abs/2301.09637">Paper</a></li>
-                  <li><a href="https://hubert0527.github.io/infinicity/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/ppp.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Unveiling The Mask of Position-Information Pattern Through the Mist of Image Features</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Chieh Hubert Lin, Hung-Yu Tseng, Hsin-Ying Lee, Maneesh Kumar Singh, Ming-Hsuan Yang</div>
-              <div class="pubv">ICML 2023</div>
-              <div class="publ">
-                  <li><a href="https://proceedings.mlr.press/v202/lin23k/lin23k.pdf">Paper</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/3DAvatargan.gif">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">3DAvatarGAN: Bridging Domains for Personalized Editable Avatars</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Rameen Abdal,  Hsin-Ying Lee,  Peihao Zhu,  Menglei Chai,  Aliaksandr Siarohin, Peter Wonka,  Sergey Tulyakov</div>
-              <div class="pubv">CVPR 2023</div>
-              <div class="publ">
-                  <li><a href="https://arxiv.org/abs/2301.02700">Paper</a></li>
-                  <li><a href="https://rameenabdal.github.io/3DAvatarGAN/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/sdfusion.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">SDFusion: Multimodal 3D Shape Completion, Reconstruction, and Generation</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Yen-Chi Cheng, Hsin-Ying Lee, Sergey Tulyakov, Alexander Schwing, Liangyan Gui</div>
-              <div class="pubv">CVPR 2023</div>
-              <div class="publ">
-                  <li><a href="https://arxiv.org/abs/2212.04493">Paper</a></li>
-                  <li><a href="https://yccyenchicheng.github.io/SDFusion/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/makeastory.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Make-A-Story: Visual Memory Conditioned Consistent Story Generation</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Tanzila Rahman, Hsin-Ying Lee, Jian Ren, Sergey Tulyakov, Shweta Mahajan, Leonid Sigal</div>
-              <div class="pubv">CVPR 2023</div>
-              <div class="publ">
-                  <li><a href="https://arxiv.org/abs/2211.13319">Paper</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/discoscene.jpeg">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">DiscoScene: Spatially Disentangled Generative Radiance Field for Controllable 3D-aware Scene Synthesis</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Yinghao Xu, Menglei Chai, Zifan Shi, Sida Peng, Ivan Skorokhodov, Aliaksandr Siarohin, Ceyuan Yang, Yujun Shen, Hsin-Ying Lee, Bolei Zhou, Sergey Tulyakov</div>
-              <div class="pubv">CVPR 2023 (Highlight)</div>
-              <div class="publ">
-                  <li><a href="https://snap-research.github.io/discoscene/contents/discoscene.pdf">Paper</a></li>
-                  <li><a href="https://snap-research.github.io/discoscene/">Project</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/uva.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Unsupervised Volumetric Animation</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Aliaksandr Siarohin, Willi Menapace, Ivan Skorokhodov, Kyle Olszewski, Jian Ren, Hsin-Ying Lee, Menglei Chai, Sergey Tulyakov</div>
-              <div class="pubv">CVPR 2023</div>
-              <div class="publ">
-                  <li><a href="https://arxiv.org/abs/2301.11326">Paper</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/3dgp.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">3D Generation on ImageNet</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Ivan Skorokhodov, Aliaksandr Siarohin, Yinghao Xu, Jian Ren, Hsin-Ying Lee, Peter Wonka, Sergey Tulyakov</div>
-              <div class="pubv">ICLR 2023 (oral)</div>
-              <div class="publ">
-                  <li><a href="https://openreview.net/forum?id=U2WjB9xxZ9q">Paper</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/cm3d.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Cross-Modal 3D Shape Generation and Manipulation</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Zezhou Cheng, Menglei Chai, Jian Ren, Hsin-Ying Lee, Kyle Olszewski, Zeng Huang, Subhransu Maji, Sergey Tulyakov</div>
-              <div class="pubv">ECCV 2022</div>
-              <div class="publ">
-                  <li><a href="https://people.cs.umass.edu/~zezhoucheng/edit3d/">Project</a></li>
-                  <li><a href="https://arxiv.org/abs/2207.11795">Paper</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/vqi2i.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Vector Quantized Image-to-Image Translation</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Yu-Jie Chen, Shin-I Cheng, Wei-Chen Chiu, Hung-Yu Tseng, Hsin-Ying Lee</div>
-              <div class="pubv">ECCV 2022</div>
-              <div class="publ">
-                  <li><a href="https://github.com/cyj407/VQ-I2I">Project</a></li>
-                  <li><a href="https://arxiv.org/abs/2205.07680">Paper</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/mmvid.gif">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Show Me What and Tell Me How: Video Synthesis via Multimodal Conditioning</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Ligong Han, Jian Ren, Hsin-Ying Lee, Francesco Barbieri, Kyle Olszewski, Shervin Minaee, Dimitris Metaxas, Sergey Tulyakov</div>
-              <div class="pubv">ECCV 2022</div>
-              <div class="publ">
-                  <li><a href="https://github.com/snap-research/MMVID">Project</a></li>
-                  <li><a href="https://arxiv.org/abs/2203.02573">Paper</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/inout.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">In&Out: Diverse Image Outpainting via GAN Inversion</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Yen-Chi Cheng, Chieh Hubert Lin, Hsin-Ying Lee, Jian Ren, Sergey Tulyakov, Ming-Hsuan Yang</div>
-              <div class="pubv">CVPR 2022</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="https://yccyenchicheng.github.io/InOut/">Project</a></li>
-                  <li><a href="https://arxiv.org/abs/2104.00675">Paper</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/infinityGAN.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">InfinityGAN: Towards Infinite-Resolution Image Synthesis</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Chieh Hubert Lin, Hsin-Ying Lee, Yen-Chi Cheng, Sergey Tulyakov, Ming-Hsuan Yang</div>
-              <div class="pubv">ICLR 2022</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="https://hubert0527.github.io/infinityGAN/">Project</a></li>
-                  <li><a href="https://arxiv.org/abs/2104.03963">Paper</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/sav.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Continuous and Diverse Image-to-Image Translation via Signed Attribute Vectors</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Qi Mao, Hung-Yu Tseng, Hsin-Ying Lee, Jia-Bin Huang, Siwei Ma, Ming-Hsuan Yang</div>
-              <div class="pubv">IJCV 2020</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="https://arxiv.org/abs/2011.01215">Paper</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/RetrieveGAN.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">RetrieveGAN: Image Synthesis via Differentiable Patch Retrieval</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Hung-Yu Tseng, Hsin-Ying Lee, Lu Jiang, Ming-Hsuan Yang, Weilong Yang</div>
-              <div class="pubv">ECCV 2020</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="https://arxiv.org/abs/2007.08513">Paper</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/SegVAE.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Controllable Image Synthesis via SegVAE</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Yen-Chi Cheng, Hsin-Ying Lee, Min Sun, Ming-Hsuan Yang</div>
-              <div class="pubv">ECCV 2020</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="https://arxiv.org/abs/2007.08397">Paper</a></li>
-                  <li><a href="https://github.com/yccyenchicheng/SegVAE">Code</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row item">
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/SemanticViewSyn.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Semantic View Synthesis</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Hsin-Ping Huang, Hung-Yu Tseng, Hsin-Ying Lee, Jia-Bin Huang</div>
-              <div class="pubv">ECCV 2020</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="https://arxiv.org/abs/2008.10598">Paper</a></li>
-                  <li><a href="https://github.com/hhsinping/svs">Code</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/paper_layout.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Neural Design Network: Graphic Layout Generation with Constraints</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Hsin-Ying Lee, Weilong Yang, Lu Jiang, Madison Le, Irfan Essa, Haifeng Gong, Ming-Hsuan Yang</div>
-              <div class="pubv">ECCV 2020 (spotlight)</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="https://arxiv.org/abs/1912.09421">Paper</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/paper_iclr.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Cross-Domain Few-Shot Classification via Learned Feature-Wise Transformation</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Hung-Yu Tseng, Hsin-Ying Lee, Jia-Bin Huang, Ming-Hsuan Yang</div>
-              <div class="pubv">ICLR 2020</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="https://openreview.net/pdf?id=SJl5Np4tPr">Paper</a></li>
-                  <li><a href="https://github.com/hytseng0509/CrossDomainFewShot">Code</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="Dance/dance.gif">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Dancing to Music</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Hsin-Ying Lee, Xiaodong Yang, Ming-Yu Liu, Ting-Chun Wang, Yu-Ding Lu, Ming-Hsuan Yang, Jan Kautz</div>
-              <div class="pubv">NeurIPS 2019</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="https://arxiv.org/abs/1911.02001">Paper</a></li>
-                  <li><a href="https://github.com/NVlabs/Dancing2Music">Code</a></li>
-                  <li><a href="Dancing2Music/script.txt" target="blank">Script for data and models</a></li>
-                  <li><a href="Dancing2Music/demo.zip" target="blank">Demo code</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/audioSpatial.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Self-supervised Audio Spatialization with Correspondence Classifier</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Yu-Ding Lu, Hsin-Ying Lee, Hung-Yu Tseng, Ming-Hsuan Yang</div>
-              <div class="pubv">ICIP 2019</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="https://arxiv.org/pdf/1905.05375.pdf">Paper</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/MSGAN.jpg">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Qi Mao*, Hsin-Ying Lee*, Hung-Yu Tseng*, Siwei Ma, and Ming-Hsuan Yang</div>
-              <div class="pubv">CVPR 2019</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="https://arxiv.org/abs/1903.05628">Paper</a></li>
-                  <li><a href="https://github.com/HelenMao/MSGAN">Code</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="DRIT/images/final.gif">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Diverse Image-to-Image Translation via Disentangled Representations</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Hsin-Ying Lee*, Hung-Yu Tseng*, Jia-Bin Huang, Maneesh Kumar Singh, and Ming-Hsuan Yang</div>
-              <div class="pubv">ECCV 2018 (oral)</div>
-              <div class="pubv">IJCV 2019</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="https://arxiv.org/abs/1808.00948">Paper (conference)</a></li>
-                  <li><a href="https://arxiv.org/abs/1905.01270">Paper (journal)</a></li>
-                  <li><a href="http://vllab.ucmerced.edu/hylee/DRIT/">Project Page</a></li>
-                  <li><a href="https://github.com/HsinYingLee/DRIT">Code</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/paper_subgan.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt"> Sub-GAN: An Unsupervised Generative Model via Subspaces.</div>
-              <div class="pubd">
-              </div>
-              <div class="puba">Jie Liang, Jufeng Yang, Hsin-Ying Lee, Kai Wang, and Ming-Hsuan Yang</div>
-              <div class="pubv">ECCV 2018</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="http://faculty.ucmerced.edu/mhyang/papers/eccv2018_subgan.pdf">Paper</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="VideoHighlights/GIF/3iTmL5fmJRo/0.gif">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Video Highlights Using Retention Stats</div>
-              <div class="pubd">This project is done during the intership at Google. We explore a Youtube statistics - Retention Stats as an auxiliary training signal for video highlights extraction. Retention stats is a Youtube metric that takes multiple behaviors into consideration including when do audiences start, when do they quit, which parts are viewed multiple times and which parts are skipped frequently. We focus on sports highlights since they often share more consistent consensus among audience than other categories.
-              </div>
-              <div class="puba">Hsin-Ying Lee, Min-Hsuan Tsai, Zheng Sun, and Weilong Yang</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="http://vllab.ucmerced.edu/hylee/VideoHighlights">Demo Page</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="OPN/images/sorting.gif">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Unsupervised Representation Learning by Sorting Sequences</div>
-              <div class="pubd">This work proposes a self-supervised sequence sorting task to learn image representation using unlabeled videos.
-              </div>
-              <div class="puba">Hsin-Ying Lee, Jia-Bin Huang, Maneesh Kumar Singh, and Ming-Hsuan Yang</div>
-              <div class="pubv">ICCV 2017</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="http://vllab.ucmerced.edu/hylee/publication/ICCV17_OPN.pdf">PDF</a></li>
-                  <li><a href="http://vllab.ucmerced.edu/hylee/OPN">Project Page</a></li>
-                  <li><a href="http://github.com/HsinYingLee/OPN">Code</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/paper_dac.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Graph-Based Logic Bit Slicing for Datapath-Aware Placement</div>
-              <div class="pubd">This work proposes a balanced edge-cover algorithm to completely slice any datapath, and an SA-based
-                                refinement process to exploit the bit-slice paths as an alignment guidance to placers.
-              </div>
-              <div class="puba">Chau-Chin Huang, Bo-Qiao Lin, Hsin-Ying Lee, Yao-Wen Chang, Kuo-Sheng Wu, and Jun-Zhi Yang</div>
-              <div class="pubv">DAC 2017</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="http://vllab.ucmerced.edu/hylee/publication/dac17_datapath.pdf">PDF</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/paper_deblur.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Soft-Segmentation Guided Object Motion Deblurring</div>
-              <div class="pubd">This work aims to use a maximum a posterior formulation in which soft-segmentation is
-                      incorporated for object layer estimation to jointly estimate object segmentation and camera
-                      motion.</div>
-              <div class="puba">Jinshan Pan, Zhe Hu, Hsin-Ying Lee, and Ming-Hsuan Yang</div>
-              <div class="pubv">CVPR 2016</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="https://pdfs.semanticscholar.org/8f34/d07c4490f00a6ee658d902e723eb3797f026.pdf">PDF</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-            <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/paper_placement.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Detailed-routability-driven analytical placement for mixed-size designs with technology and region constraints</div>
-              <div class="pubd">This work aims to participate in the 2015 ISPD Blockage-Aware Detailed Routing-Driven
-                      Placement Contest, which targeted at detailed-routability-driven analytical placement for
-                      mixed-size design.</div>
-              <div class="puba">Chau-Chin Huang, Hsin-Ying Lee, Bo-Qiao Lin, Sheng-Wei Yang, Chin-Hao Chang, Szu-To Chen, Yao-Wen Chang</div>
-              <div class="pubv">ICCAD 2015</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="http://media.wix.com/ugd/4e32a1_c25daca77a7d433bb7562ceb0a612c67.pdf">PDF</a></li>
-                  <li><a href="http://www.ispd.cc/contests/15/ispd2015contest.html">Contest Page</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="pubwrap">
-        <div class="row">
-          <div class="col l4 m6 s12">
-            <div class="pubimg">
-              <img src="images/paper_d2d.png">
-            </div>
-          </div>
-          <div class="col l8 m6 s12">
-            <div class="pub">
-              <div class="pubt">Bio-inspired proximity discovery and synchronization for D2D communications</div>
-              <div class="pubd">This work aims to propose a distributed mechanism for Device-to-Device (D2D) communication, which achieves proximity discovery and synchronization simultaneously</div>
-              <div class="puba">Shih-Lung Chao, Hsin-Ying Lee, Ching-Chun Chou, Hung-Yu Wei</div>
-              <div class="pubv">IEEE communications letters, 2013</div>
-              <div class="publ">
-                <ul>
-                  <li><a href="http://media.wix.com/ugd/4e32a1_9e374e2f28cd4422b63002238b184f91.pdf">PDF</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-
-  <!--Activity
-  <section id="activity" class="activity-section">
-    <div class="container">
-      <h4>Activities</h2>
-      <hr>
-      <div class="spacer"></div>
-      <div class="row">
-
-        <div class="col l3 m3 s12">
-            <div class="text-center">
-              <img src="images/sinica_citi.jpg" class="img-thumbnail responsive-img">
-            </div>
-            <div class="proj-info">
-              <h4 class="proj-title">Invited talk</h4>
-              <div>Learning Visual-Semantic Embeddings with Structured Constraints</div>
-              <div class="date">Jan. 2017, Academia Sinica, Taiwan</div>
-              <div class="conf"><a href="http://mml.citi.sinica.edu.tw/VLM2017.html" target="blank">website</a></div>
-            </div>
-        </div>
-        <div class="col l3 m3 s12">
-            <div class="text-center">
-              <img src="images/sinica_citi.jpg" class="img-thumbnail responsive-img">
-            </div>
-            <div class="proj-info">
-              <h4 class="proj-title">Invited talk</h4>
-              <div>Unsupervised Representation Learning by Sorting Sequences</div>
-              <div class="date">Dec. 2017, Academia Sinica, Taiwan</div>
-            </div>
-        </div>
-        <div class="col l3 m3 s12">
-            <div class="text-center">
-              <img src="images/eccv2018.png" class="img-thumbnail responsive-img">
-            </div>
-            <div class="proj-info">
-              <h4 class="proj-title">Oral Presentation</h4>
-              <div>Diverse Image-to-Image Translation via Disentangled Representations</div>
-              <div class="date">Sep. 2018, Munich, Germany</div>
-            </div>
-        </div>
-
+      <div id="publications-container">
+        <!-- Publications will be dynamically inserted here -->
       </div>
     </div>
   </section>
-  -->
 
   <!-- Education -->
  <section id="education" class="education-section">
@@ -1263,13 +231,46 @@
     </section>
 
 
-
-
-
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/publications.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const container = document.getElementById('publications-container');
+    
+    publications.forEach(pub => {
+      const pubHTML = `
+        <div class="pubwrap">
+          <div class="row">
+            <div class="col l4 m6 s12">
+              <div class="pubimg">
+                <img src="${pub.imageUrl}">
+              </div>
+            </div>
+            <div class="col l8 m6 s12">
+              <div class="pub">
+                <div class="pubt">${pub.title}</div>
+                <div class="pubd">${pub.description}</div>
+                <div class="puba">${pub.authors}</div>
+                <div class="pubv">${pub.venue}</div>
+                <div class="publ">
+                  <ul>
+                    ${pub.links.map(link => 
+                      `<li><a href="${link.url}" target="_blank">${link.text}</a></li>`
+                    ).join('')}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      container.innerHTML += pubHTML;
+    });
+  });
+  </script>
 
   </body>
 </html>
