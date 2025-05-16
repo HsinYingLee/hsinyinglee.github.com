@@ -155,6 +155,18 @@ const publications = [
     category: "image"
   },
   {
+    imageUrl: "images/iclr24_magic123.gif",
+    title: "Magic123: One Image to High-Quality 3D Object Generation Using Both 2D and 3D Diffusion Priors",
+    description: "",
+    authors: "Guocheng Qian, Jinjie Mai, Abdullah Hamdi, Jian Ren, Aliaksandr Siarohin, Bing Li, Hsin-Ying Lee, Ivan Skorokhodov, Peter Wonka, Sergey Tulyakov, Bernard Ghanem",
+    venue: "ICLR 2024",
+    links: [
+      { url: "https://arxiv.org/abs/2306.17843", text: "Paper" },
+      { url: "https://guochengqian.github.io/project/magic123/", text: "Project" }
+    ],
+    category: "3d"
+  },
+  {
     imageUrl: "images/siggraphasia23_text2cine.gif",
     title: "Text-Guided Synthesis of Eulerian Cinemagraphs",
     description: "",
@@ -420,8 +432,8 @@ const publications = [
     links: [
       { url: "https://arxiv.org/abs/1911.02001", text: "Paper" },
       { url: "https://github.com/NVlabs/Dancing2Music", text: "Code" },
-      { url: "Dancing2Music/script.txt", text: "Script for data and models" },
-      { url: "Dancing2Music/demo.zip", text: "Demo code" }
+      { url: "https://hsinyinglee.com/Project_page/Dancing2Music/script.txt", text: "Script for data and models" },
+      { url: "https://hsinyinglee.com/Project_page/Dancing2Music/demo.zip", text: "Demo code" }
     ],
     category: "video"
   },
@@ -457,7 +469,7 @@ const publications = [
     links: [
       { url: "https://arxiv.org/abs/1808.00948", text: "Paper (conference)" },
       { url: "https://arxiv.org/abs/1905.01270", text: "Paper (journal)" },
-      { url: "http://vllab.ucmerced.edu/hylee/DRIT/", text: "Project Page" },
+      { url: "https://hsinyinglee.com/Project_page/DRIT/", text: "Project Page" },
       { url: "https://github.com/HsinYingLee/DRIT", text: "Code" }
     ],
     category: "image"
@@ -480,7 +492,7 @@ const publications = [
     authors: "Hsin-Ying Lee, Min-Hsuan Tsai, Zheng Sun, and Weilong Yang",
     venue: "",
     links: [
-      { url: "http://vllab.ucmerced.edu/hylee/VideoHighlights", text: "Demo Page" }
+      { url: "https://hsinyinglee.com/Project_page/VideoHighlights/", text: "Demo Page" }
     ],
     category: "video"
   },
@@ -491,8 +503,8 @@ const publications = [
     authors: "Hsin-Ying Lee, Jia-Bin Huang, Maneesh Kumar Singh, and Ming-Hsuan Yang",
     venue: "ICCV 2017",
     links: [
-      { url: "http://vllab.ucmerced.edu/hylee/publication/ICCV17_OPN.pdf", text: "PDF" },
-      { url: "http://vllab.ucmerced.edu/hylee/OPN", text: "Project Page" },
+      { url: "https://arxiv.org/abs/1708.01246", text: "Paper" },
+      { url: "https://hsinyinglee.com/Project_page/OPN/", text: "Project Page" },
       { url: "http://github.com/HsinYingLee/OPN", text: "Code" }
     ],
     category: "other"
@@ -504,7 +516,7 @@ const publications = [
     authors: "Chau-Chin Huang, Bo-Qiao Lin, Hsin-Ying Lee, Yao-Wen Chang, Kuo-Sheng Wu, and Jun-Zhi Yang",
     venue: "DAC 2017",
     links: [
-      { url: "http://vllab.ucmerced.edu/hylee/publication/dac17_datapath.pdf", text: "PDF" }
+      { url: "https://ieeexplore.ieee.org/document/8060443", text: "Paper" }
     ],
     category: "other"
   },
