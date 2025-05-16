@@ -36,7 +36,7 @@ const publications = [
   },
   {
     imageUrl: "images/iclr25_delta.gif",
-    title: "DELTA: Dense Efficient Long-range 3D Tracking for Any video",
+    title: "DELTA: Dense Efficient Long-range 3D Tracking for Any Video",
     description: "",
     authors: "Tuan Duc Ngo, Peiye Zhuang, Evangelos Kalogerakis, Chuang Gan, Sergey Tulyakov, Hsin-Ying Lee, Chaoyang Wang",
     venue: "ICLR 2025",
