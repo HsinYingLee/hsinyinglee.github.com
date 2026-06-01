@@ -18,7 +18,7 @@
     "category": "3d"
   },
   {
-    "imageUrl": "images/publications/cvpr25_4realvideo.gif",
+    "videoUrl": "videos/publications/cvpr25_4realvideo.mp4",
     "title": "4Real-Video: Learning Generalizable Photo-realistic 4D Video Diffusion",
     "description": "",
     "authors": "Chaoyang Wang, Peiye Zhuang, Tuan Duc Ngo, Willi Menapace, Aliaksandr Siarohin, Michael Vasilkovsky, Ivan Skorokhodov, Sergey Tulyakov, Peter Wonka, Hsin-Ying Lee",
