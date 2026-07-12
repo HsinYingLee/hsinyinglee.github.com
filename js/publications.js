@@ -1,4 +1,4 @@
-const PUBLICATIONS_DATA_URL = 'data/publications.json';
+const PUBLICATIONS_DATA_URL = 'data/publications.json?v=20260711b';
 
 document.addEventListener('DOMContentLoaded', async () => {
   const container = document.getElementById('publications-container');
@@ -17,16 +17,38 @@ document.addEventListener('DOMContentLoaded', async () => {
     "'": '&#39;'
   })[char]);
 
-  const getPublicationYear = pub => {
-    const match = String(pub.venue ?? '').match(/20\d{2}/);
-    return match ? match[0] : 'Other';
+  const normalizePublication = publication => {
+    const normalized = { ...publication };
+
+    if (!Number.isInteger(normalized.year)) {
+      const yearMatch = String(normalized.venue ?? '').match(/20\d{2}/);
+      normalized.year = yearMatch ? Number(yearMatch[0]) : null;
+    }
+
+    if (normalized.imageUrl?.endsWith('.gif')) {
+      const filename = normalized.imageUrl.split('/').pop();
+      const stem = filename.slice(0, -4);
+      normalized.videoUrl = `videos/publications/optimized/${stem}.mp4`;
+      normalized.posterUrl = `videos/publications/optimized/${stem}.jpg`;
+      delete normalized.imageUrl;
+    } else if (normalized.videoUrl && !normalized.posterUrl) {
+      const filename = normalized.videoUrl.split('/').pop();
+      const stem = filename.replace(/\.mp4$/i, '');
+      normalized.posterUrl = `videos/publications/optimized/${stem}.jpg`;
+    }
+
+    return normalized;
   };
 
-  const loadPublications = async () => {
-    const response = await fetch(PUBLICATIONS_DATA_URL);
+  const getPublicationYear = publication => {
+    return Number.isInteger(publication.year) ? String(publication.year) : 'Other';
+  };
+
+  const fetchPublications = async url => {
+    const response = await fetch(url, { cache: 'no-store' });
 
     if (!response.ok) {
-      throw new Error(`Unable to load publications from ${PUBLICATIONS_DATA_URL}`);
+      throw new Error(`Unable to load publications from ${url}`);
     }
 
     const data = await response.json();
@@ -35,7 +57,25 @@ document.addEventListener('DOMContentLoaded', async () => {
       throw new Error('Publication data must be an array.');
     }
 
-    return data;
+    return data.map(normalizePublication);
+  };
+
+  const loadPublications = async () => {
+    const urls = [
+      PUBLICATIONS_DATA_URL,
+      `data/publications.json?retry=${Date.now()}`
+    ];
+    let lastError = null;
+
+    for (const url of urls) {
+      try {
+        return await fetchPublications(url);
+      } catch (error) {
+        lastError = error;
+      }
+    }
+
+    throw lastError;
   };
 
   const renderLoadError = () => {
@@ -80,7 +120,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   searchContainer.innerHTML = `
     <div class="pub-search-field">
       <i class="material-icons" aria-hidden="true">search</i>
-      <input type="search" id="pub-search" aria-label="Search publications" placeholder="Search publications by title, author, or venue...">
+      <input type="search" id="pub-search" aria-label="Search publications" placeholder="Search title, author, or venue">
     </div>
   `;
   pubSection.insertBefore(searchContainer, categoriesContainer);
@@ -111,31 +151,41 @@ document.addEventListener('DOMContentLoaded', async () => {
   let showAllPublications = false;
   let searchTerm = '';
 
+  const notifyMediaUpdated = () => {
+    document.dispatchEvent(new CustomEvent('site:media-updated', {
+      detail: { root: container }
+    }));
+  };
+
   const renderPublications = pubs => {
     if (!pubs.length) {
       container.innerHTML = '<p class="empty-state">No publications match this filter.</p>';
+      notifyMediaUpdated();
       return;
     }
 
-    container.innerHTML = pubs.map(pub => `
-      <div class="pubwrap">
+    container.innerHTML = pubs.map((pub, index) => {
+      const titleId = `publication-title-${index}`;
+      const media = pub.videoUrl
+        ? `<video src="${escapeHTML(pub.videoUrl)}"${pub.posterUrl ? ` poster="${escapeHTML(pub.posterUrl)}"` : ''} data-autoplay muted loop playsinline preload="none" aria-label="${escapeHTML(pub.title)} preview"></video>`
+        : `<img src="${escapeHTML(pub.imageUrl)}" alt="${escapeHTML(pub.title)}" loading="lazy" decoding="async">`;
+
+      return `
+      <article class="pubwrap" aria-labelledby="${titleId}">
         <div class="pub-card">
           <div class="pub-media">
             <div class="pubimg">
-              ${pub.videoUrl
-                ? `<video src="${escapeHTML(pub.videoUrl)}" autoplay muted loop playsinline preload="metadata" aria-label="${escapeHTML(pub.title)} preview"></video>`
-                : `<img src="${escapeHTML(pub.imageUrl)}" alt="${escapeHTML(pub.title)}" loading="lazy" decoding="async">`
-              }
+              ${media}
             </div>
           </div>
           <div class="pub-content">
             <div class="pub">
-              <div class="pubt">${escapeHTML(pub.title)}</div>
-              ${pub.description ? `<div class="pubd">${escapeHTML(pub.description)}</div>` : ''}
-              <div class="puba">${escapeHTML(pub.authors)}</div>
-              <div class="pubv">${escapeHTML(pub.venue)}</div>
+              <h3 class="pubt" id="${titleId}">${escapeHTML(pub.title)}</h3>
+              ${pub.description ? `<p class="pubd">${escapeHTML(pub.description)}</p>` : ''}
+              <p class="puba">${escapeHTML(pub.authors)}</p>
+              <p class="pubv">${escapeHTML(pub.venue)}</p>
               <div class="publ">
-                <ul>
+                <ul aria-label="${escapeHTML(pub.title)} links">
                   ${pub.links.map(link =>
                     `<li><a href="${escapeHTML(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(link.text)}</a></li>`
                   ).join('')}
@@ -144,8 +194,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
           </div>
         </div>
-      </div>
-    `).join('');
+      </article>
+    `;
+    }).join('');
+
+    notifyMediaUpdated();
   };
 
   const filterAndRender = () => {

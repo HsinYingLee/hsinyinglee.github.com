@@ -1,10 +1,12 @@
 [
   {
     "videoUrl": "videos/publications/t2bs-retargeting.mp4",
+    "posterUrl": "videos/publications/optimized/t2bs-retargeting.jpg",
     "title": "T2Bs: Text-to-Character Blendshapes via Video Generation",
     "description": "",
     "authors": "Jiahao Luo, Chaoyang Wang, Michael Vasilkovsky, Vladislav Shakhrai, Di Liu, Peiye Zhuang, Sergey Tulyakov, Peter Wonka, Hsin-Ying Lee, James Davis, Jian Wang",
     "venue": "ICCV 2025",
+    "year": 2025,
     "links": [
       {
         "url": "https://arxiv.org/abs/2509.10678",
@@ -19,10 +21,12 @@
   },
   {
     "videoUrl": "videos/publications/cvpr25_4realvideo.mp4",
+    "posterUrl": "videos/publications/optimized/cvpr25_4realvideo.jpg",
     "title": "4Real-Video: Learning Generalizable Photo-realistic 4D Video Diffusion",
     "description": "",
     "authors": "Chaoyang Wang, Peiye Zhuang, Tuan Duc Ngo, Willi Menapace, Aliaksandr Siarohin, Michael Vasilkovsky, Ivan Skorokhodov, Sergey Tulyakov, Peter Wonka, Hsin-Ying Lee",
     "venue": "CVPR 2025 (Highlight)",
+    "year": 2025,
     "links": [
       {
         "url": "https://arxiv.org/pdf/2412.04462",
@@ -42,6 +46,7 @@
     "description": "",
     "authors": "Ziya Erkoç, Can Gümeli, Chaoyang Wang, Matthias Nießner, Angela Dai, Peter Wonka, Hsin-Ying Lee, Peiye Zhuang",
     "venue": "CVPR 2025",
+    "year": 2025,
     "links": [
       {
         "url": "https://arxiv.org/pdf/2412.06592",
@@ -60,6 +65,7 @@
     "description": "",
     "authors": "Himangi Mittal, Peiye Zhuang, Hsin-Ying Lee, Shubham Tulsiani",
     "venue": "CVPR 2025",
+    "year": 2025,
     "links": [
       {
         "url": "https://openreview.net/pdf?id=LWd3njmIQd",
@@ -69,11 +75,13 @@
     "category": "3d"
   },
   {
-    "imageUrl": "images/publications/iclr25_delta.gif",
+    "videoUrl": "videos/publications/optimized/iclr25_delta.mp4",
+    "posterUrl": "videos/publications/optimized/iclr25_delta.jpg",
     "title": "DELTA: Dense Efficient Long-range 3D Tracking for Any Video",
     "description": "",
     "authors": "Tuan Duc Ngo, Peiye Zhuang, Evangelos Kalogerakis, Chuang Gan, Sergey Tulyakov, Hsin-Ying Lee, Chaoyang Wang",
     "venue": "ICLR 2025",
+    "year": 2025,
     "links": [
       {
         "url": "https://arxiv.org/abs/2410.24211",
@@ -88,11 +96,13 @@
     "featured": true
   },
   {
-    "imageUrl": "images/publications/iclr25_vd3d.gif",
+    "videoUrl": "videos/publications/optimized/iclr25_vd3d.mp4",
+    "posterUrl": "videos/publications/optimized/iclr25_vd3d.jpg",
     "title": "VD3D: Taming Large Video Diffusion Transformers for 3D Camera Control",
     "description": "",
     "authors": "Sherwin Bahmani, Ivan Skorokhodov, Aliaksandr Siarohin, Willi Menapace, Guocheng Qian, Michael Vasilkovsky, Hsin-Ying Lee, Chaoyang Wang, Jiaxu Zou, Andrea Tagliasacchi, David B. Lindell, Sergey Tulyakov",
     "venue": "ICLR 2025",
+    "year": 2025,
     "links": [
       {
         "url": "https://arxiv.org/abs/2407.12781",
@@ -107,11 +117,13 @@
     "featured": true
   },
   {
-    "imageUrl": "images/publications/iclr25_gtr.gif",
+    "videoUrl": "videos/publications/optimized/iclr25_gtr.mp4",
+    "posterUrl": "videos/publications/optimized/iclr25_gtr.jpg",
     "title": "GTR: Improving Large 3D Reconstruction Models through Geometry and Texture Refinement",
     "description": "",
     "authors": "Peiye Zhuang, Songfang Han, Chaoyang Wang, Aliaksandr Siarohin, Jiaxu Zou, Michael Vasilkovsky, Vladislav Shakhrai, Sergei Korolev, Sergey Tulyakov, Hsin-Ying Lee",
     "venue": "ICLR 2025",
+    "year": 2025,
     "links": [
       {
         "url": "https://openreview.net/pdf?id=Oxpkn0YLG1",
@@ -125,11 +137,13 @@
     "category": "3d"
   },
   {
-    "imageUrl": "images/publications/iclr25_3ditscene.gif",
+    "videoUrl": "videos/publications/optimized/iclr25_3ditscene.mp4",
+    "posterUrl": "videos/publications/optimized/iclr25_3ditscene.jpg",
     "title": "3DitScene: Editing Any Scene via Language-guided Disentangled Gaussian Splatting",
     "description": "",
     "authors": "Qihang Zhang, Yinghao Xu, Chaoyang Wang, Hsin-Ying Lee, Gordon Wetzstein, Bolei Zhou, Ceyuan Yang",
     "venue": "ICLR 2025",
+    "year": 2025,
     "links": [
       {
         "url": "https://arxiv.org/abs/2405.18424",
@@ -143,11 +157,13 @@
     "category": "3d"
   },
   {
-    "imageUrl": "images/publications/nips24_4real.gif",
+    "videoUrl": "videos/publications/optimized/nips24_4real.mp4",
+    "posterUrl": "videos/publications/optimized/nips24_4real.jpg",
     "title": "4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models",
     "description": "",
     "authors": "Heng Yu, Chaoyang Wang, Peiye Zhuang, Willi Menapace, Aliaksandr Siarohin, Junli Cao, Laszlo A Jeni, Sergey Tulyakov, Hsin-Ying Lee",
     "venue": "NeurIPS 2024",
+    "year": 2024,
     "links": [
       {
         "url": "https://arxiv.org/abs/2406.07472",
@@ -162,11 +178,13 @@
     "featured": true
   },
   {
-    "imageUrl": "images/publications/eccv24_upfusion.gif",
+    "videoUrl": "videos/publications/optimized/eccv24_upfusion.mp4",
+    "posterUrl": "videos/publications/optimized/eccv24_upfusion.jpg",
     "title": "UpFusion: Novel View Diffusion from Unposed Sparse View Observations",
     "description": "",
     "authors": "Bharath Raj Nagoor Kani, Hsin-Ying Lee, Sergey Tulyakov, Shubham Tulsiani",
     "venue": "ECCV 2024",
+    "year": 2024,
     "links": [
       {
         "url": "https://arxiv.org/pdf/2312.06661",
@@ -180,11 +198,13 @@
     "category": "3d"
   },
   {
-    "imageUrl": "images/publications/cvpr24_scenetex.gif",
+    "videoUrl": "videos/publications/optimized/cvpr24_scenetex.mp4",
+    "posterUrl": "videos/publications/optimized/cvpr24_scenetex.jpg",
     "title": "Scenetex: High-quality texture synthesis for indoor scenes via diffusion priors",
     "description": "",
     "authors": "Dave Zhenyu Chen, Haoxuan Li, Hsin-Ying Lee, Sergey Tulyakov, Matthias Nießner",
     "venue": "CVPR 2024 (Spotlight)",
+    "year": 2024,
     "links": [
       {
         "url": "https://daveredrum.github.io/SceneTex/static/SceneTex.pdf",
@@ -204,6 +224,7 @@
     "description": "",
     "authors": "Tsai-Shien Chen, Aliaksandr Siarohin, Willi Menapace, Ekaterina Deyneka, Hsiang-wei Chao, Byung Eun Jeon, Yuwei Fang, Hsin-Ying Lee, Jian Ren, Ming-Hsuan Yang, Sergey Tulyakov",
     "venue": "CVPR 2024",
+    "year": 2024,
     "links": [
       {
         "url": "https://arxiv.org/abs/2402.19479",
@@ -218,11 +239,13 @@
     "featured": true
   },
   {
-    "imageUrl": "images/publications/cvpr24_scenewiz.gif",
+    "videoUrl": "videos/publications/optimized/cvpr24_scenewiz.mp4",
+    "posterUrl": "videos/publications/optimized/cvpr24_scenewiz.jpg",
     "title": "Scenewiz3d: Towards text-guided 3d scene composition",
     "description": "",
     "authors": "Qihang Zhang, Chaoyang Wang, Aliaksandr Siarohin, Peiye Zhuang, Yinghao Xu, Ceyuan Yang, Dahua Lin, Bolei Zhou, Sergey Tulyakov, Hsin-Ying Lee",
     "venue": "CVPR 2024",
+    "year": 2024,
     "links": [
       {
         "url": "https://zqh0253.github.io/SceneWiz3D/media/scenewiz3d.pdf",
@@ -241,6 +264,7 @@
     "description": "",
     "authors": "Hsin-Ying Lee, Hsin-Ying Lee, Hung-Yu Tseng, Ming-Hsuan Yang",
     "venue": "CVPR 2024",
+    "year": 2024,
     "links": [
       {
         "url": "https://arxiv.org/abs/2311.18832",
@@ -254,11 +278,13 @@
     "category": "image"
   },
   {
-    "imageUrl": "images/publications/iclr24_magic123.gif",
+    "videoUrl": "videos/publications/optimized/iclr24_magic123.mp4",
+    "posterUrl": "videos/publications/optimized/iclr24_magic123.jpg",
     "title": "Magic123: One Image to High-Quality 3D Object Generation Using Both 2D and 3D Diffusion Priors",
     "description": "",
     "authors": "Guocheng Qian, Jinjie Mai, Abdullah Hamdi, Jian Ren, Aliaksandr Siarohin, Bing Li, Hsin-Ying Lee, Ivan Skorokhodov, Peter Wonka, Sergey Tulyakov, Bernard Ghanem",
     "venue": "ICLR 2024",
+    "year": 2024,
     "links": [
       {
         "url": "https://arxiv.org/abs/2306.17843",
@@ -273,11 +299,13 @@
     "featured": true
   },
   {
-    "imageUrl": "images/publications/siggraphasia23_text2cine.gif",
+    "videoUrl": "videos/publications/optimized/siggraphasia23_text2cine.mp4",
+    "posterUrl": "videos/publications/optimized/siggraphasia23_text2cine.jpg",
     "title": "Text-Guided Synthesis of Eulerian Cinemagraphs",
     "description": "",
     "authors": "Aniruddha Mahapatra, Aliaksandr Siarohin, Hsin-Ying Lee, Sergey Tulyakov, Jun-Yan Zhu",
     "venue": "SIGGRAPH Asia 2023",
+    "year": 2023,
     "links": [
       {
         "url": "https://arxiv.org/abs/2307.03190",
@@ -296,6 +324,7 @@
     "description": "",
     "authors": "Dave Zhenyu Chen, Yawar Siddiqui, Hsin-Ying Lee, Sergey Tulyakov, Matthias Nießner",
     "venue": "ICCV 2023",
+    "year": 2023,
     "links": [
       {
         "url": "https://arxiv.org/abs/2303.11396",
@@ -315,6 +344,7 @@
     "description": "",
     "authors": "Chieh Hubert Lin, Hsin-Ying Lee, Willi Menapace, Menglei Chai, Aliaksandr Siarohin, Ming-Hsuan Yang, Sergey Tulyakov",
     "venue": "ICCV 2023",
+    "year": 2023,
     "links": [
       {
         "url": "https://arxiv.org/abs/2301.09637",
@@ -334,6 +364,7 @@
     "description": "",
     "authors": "Chieh Hubert Lin, Hung-Yu Tseng, Hsin-Ying Lee, Maneesh Kumar Singh, Ming-Hsuan Yang",
     "venue": "ICML 2023",
+    "year": 2023,
     "links": [
       {
         "url": "https://proceedings.mlr.press/v202/lin23k/lin23k.pdf",
@@ -343,11 +374,13 @@
     "category": "other"
   },
   {
-    "imageUrl": "images/publications/cvpr23_3DAvatargan.gif",
+    "videoUrl": "videos/publications/optimized/cvpr23_3DAvatargan.mp4",
+    "posterUrl": "videos/publications/optimized/cvpr23_3DAvatargan.jpg",
     "title": "3DAvatarGAN: Bridging Domains for Personalized Editable Avatars",
     "description": "",
     "authors": "Rameen Abdal, Hsin-Ying Lee, Peihao Zhu, Menglei Chai, Aliaksandr Siarohin, Peter Wonka, Sergey Tulyakov",
     "venue": "CVPR 2023",
+    "year": 2023,
     "links": [
       {
         "url": "https://arxiv.org/abs/2301.02700",
@@ -366,6 +399,7 @@
     "description": "",
     "authors": "Yen-Chi Cheng, Hsin-Ying Lee, Sergey Tulyakov, Alexander Schwing, Liangyan Gui",
     "venue": "CVPR 2023",
+    "year": 2023,
     "links": [
       {
         "url": "https://arxiv.org/abs/2212.04493",
@@ -385,6 +419,7 @@
     "description": "",
     "authors": "Tanzila Rahman, Hsin-Ying Lee, Jian Ren, Sergey Tulyakov, Shweta Mahajan, Leonid Sigal",
     "venue": "CVPR 2023",
+    "year": 2023,
     "links": [
       {
         "url": "https://arxiv.org/abs/2211.13319",
@@ -399,6 +434,7 @@
     "description": "",
     "authors": "Yinghao Xu, Menglei Chai, Zifan Shi, Sida Peng, Ivan Skorokhodov, Aliaksandr Siarohin, Ceyuan Yang, Yujun Shen, Hsin-Ying Lee, Bolei Zhou, Sergey Tulyakov",
     "venue": "CVPR 2023 (Highlight)",
+    "year": 2023,
     "links": [
       {
         "url": "https://snap-research.github.io/discoscene/contents/discoscene.pdf",
@@ -418,6 +454,7 @@
     "description": "",
     "authors": "Aliaksandr Siarohin, Willi Menapace, Ivan Skorokhodov, Kyle Olszewski, Jian Ren, Hsin-Ying Lee, Menglei Chai, Sergey Tulyakov",
     "venue": "CVPR 2023",
+    "year": 2023,
     "links": [
       {
         "url": "https://arxiv.org/abs/2301.11326",
@@ -432,6 +469,7 @@
     "description": "",
     "authors": "Ivan Skorokhodov, Aliaksandr Siarohin, Yinghao Xu, Jian Ren, Hsin-Ying Lee, Peter Wonka, Sergey Tulyakov",
     "venue": "ICLR 2023 (oral)",
+    "year": 2023,
     "links": [
       {
         "url": "https://openreview.net/forum?id=U2WjB9xxZ9q",
@@ -446,6 +484,7 @@
     "description": "",
     "authors": "Zezhou Cheng, Menglei Chai, Jian Ren, Hsin-Ying Lee, Kyle Olszewski, Zeng Huang, Subhransu Maji, Sergey Tulyakov",
     "venue": "ECCV 2022",
+    "year": 2022,
     "links": [
       {
         "url": "https://people.cs.umass.edu/~zezhoucheng/edit3d/",
@@ -464,6 +503,7 @@
     "description": "",
     "authors": "Yu-Jie Chen, Shin-I Cheng, Wei-Chen Chiu, Hung-Yu Tseng, Hsin-Ying Lee",
     "venue": "ECCV 2022",
+    "year": 2022,
     "links": [
       {
         "url": "https://github.com/cyj407/VQ-I2I",
@@ -477,11 +517,13 @@
     "category": "image"
   },
   {
-    "imageUrl": "images/publications/eccv22_mmvid.gif",
+    "videoUrl": "videos/publications/optimized/eccv22_mmvid.mp4",
+    "posterUrl": "videos/publications/optimized/eccv22_mmvid.jpg",
     "title": "Show Me What and Tell Me How: Video Synthesis via Multimodal Conditioning",
     "description": "",
     "authors": "Ligong Han, Jian Ren, Hsin-Ying Lee, Francesco Barbieri, Kyle Olszewski, Shervin Minaee, Dimitris Metaxas, Sergey Tulyakov",
     "venue": "ECCV 2022",
+    "year": 2022,
     "links": [
       {
         "url": "https://github.com/snap-research/MMVID",
@@ -500,6 +542,7 @@
     "description": "",
     "authors": "Yen-Chi Cheng, Chieh Hubert Lin, Hsin-Ying Lee, Jian Ren, Sergey Tulyakov, Ming-Hsuan Yang",
     "venue": "CVPR 2022",
+    "year": 2022,
     "links": [
       {
         "url": "https://yccyenchicheng.github.io/InOut/",
@@ -518,6 +561,7 @@
     "description": "",
     "authors": "Chieh Hubert Lin, Hsin-Ying Lee, Yen-Chi Cheng, Sergey Tulyakov, Ming-Hsuan Yang",
     "venue": "ICLR 2022",
+    "year": 2022,
     "links": [
       {
         "url": "https://hubert0527.github.io/infinityGAN/",
@@ -536,6 +580,7 @@
     "description": "",
     "authors": "Yan-Bo Lin, Hung-Yu Tseng, Hsin-Ying Lee, Yen-Yu Lin, and Ming-Hsuan Yang",
     "venue": "NeurIPS 2021",
+    "year": 2021,
     "links": [
       {
         "url": "https://github.com/GenjiB/CM-Co-Occurrence-AVVP",
@@ -554,6 +599,7 @@
     "description": "",
     "authors": "Qi Mao, Hung-Yu Tseng, Hsin-Ying Lee, Jia-Bin Huang, Siwei Ma, Ming-Hsuan Yang",
     "venue": "IJCV 2020",
+    "year": 2020,
     "links": [
       {
         "url": "https://arxiv.org/abs/2011.01215",
@@ -568,6 +614,7 @@
     "description": "",
     "authors": "Hung-Yu Tseng, Hsin-Ying Lee, Lu Jiang, Ming-Hsuan Yang, Weilong Yang",
     "venue": "ECCV 2020",
+    "year": 2020,
     "links": [
       {
         "url": "https://arxiv.org/abs/2007.08513",
@@ -582,6 +629,7 @@
     "description": "",
     "authors": "Yen-Chi Cheng, Hsin-Ying Lee, Min Sun, Ming-Hsuan Yang",
     "venue": "ECCV 2020",
+    "year": 2020,
     "links": [
       {
         "url": "https://arxiv.org/abs/2007.08397",
@@ -600,6 +648,7 @@
     "description": "",
     "authors": "Hsin-Ping Huang, Hung-Yu Tseng, Hsin-Ying Lee, Jia-Bin Huang",
     "venue": "ECCV 2020",
+    "year": 2020,
     "links": [
       {
         "url": "https://arxiv.org/abs/2008.10598",
@@ -618,6 +667,7 @@
     "description": "",
     "authors": "Hsin-Ying Lee, Weilong Yang, Lu Jiang, Madison Le, Irfan Essa, Haifeng Gong, Ming-Hsuan Yang",
     "venue": "ECCV 2020 (spotlight)",
+    "year": 2020,
     "links": [
       {
         "url": "https://arxiv.org/abs/1912.09421",
@@ -632,6 +682,7 @@
     "description": "",
     "authors": "Hung-Yu Tseng, Hsin-Ying Lee, Jia-Bin Huang, Ming-Hsuan Yang",
     "venue": "ICLR 2020",
+    "year": 2020,
     "links": [
       {
         "url": "https://openreview.net/pdf?id=SJl5Np4tPr",
@@ -645,11 +696,13 @@
     "category": "other"
   },
   {
-    "imageUrl": "images/publications/nips19_dance.gif",
+    "videoUrl": "videos/publications/optimized/nips19_dance.mp4",
+    "posterUrl": "videos/publications/optimized/nips19_dance.jpg",
     "title": "Dancing to Music",
     "description": "",
     "authors": "Hsin-Ying Lee, Xiaodong Yang, Ming-Yu Liu, Ting-Chun Wang, Yu-Ding Lu, Ming-Hsuan Yang, Jan Kautz",
     "venue": "NeurIPS 2019",
+    "year": 2019,
     "links": [
       {
         "url": "https://arxiv.org/abs/1911.02001",
@@ -677,6 +730,7 @@
     "description": "",
     "authors": "Yu-Ding Lu, Hsin-Ying Lee, Hung-Yu Tseng, Ming-Hsuan Yang",
     "venue": "ICIP 2019",
+    "year": 2019,
     "links": [
       {
         "url": "https://arxiv.org/pdf/1905.05375.pdf",
@@ -691,6 +745,7 @@
     "description": "",
     "authors": "Qi Mao*, Hsin-Ying Lee*, Hung-Yu Tseng*, Siwei Ma, and Ming-Hsuan Yang",
     "venue": "CVPR 2019",
+    "year": 2019,
     "links": [
       {
         "url": "https://arxiv.org/abs/1903.05628",
@@ -704,11 +759,13 @@
     "category": "image"
   },
   {
-    "imageUrl": "Project_page/DRIT/images/final.gif",
+    "videoUrl": "videos/publications/optimized/final.mp4",
+    "posterUrl": "videos/publications/optimized/final.jpg",
     "title": "Diverse Image-to-Image Translation via Disentangled Representations",
     "description": "",
     "authors": "Hsin-Ying Lee*, Hung-Yu Tseng*, Jia-Bin Huang, Maneesh Kumar Singh, and Ming-Hsuan Yang",
     "venue": "ECCV 2018 (oral), IJCV 2019",
+    "year": 2019,
     "links": [
       {
         "url": "https://arxiv.org/abs/1808.00948",
@@ -736,6 +793,7 @@
     "description": "",
     "authors": "Jie Liang, Jufeng Yang, Hsin-Ying Lee, Kai Wang, and Ming-Hsuan Yang",
     "venue": "ECCV 2018",
+    "year": 2018,
     "links": [
       {
         "url": "http://faculty.ucmerced.edu/mhyang/papers/eccv2018_subgan.pdf",
@@ -745,11 +803,13 @@
     "category": "image"
   },
   {
-    "imageUrl": "Project_page/OPN/images/sorting.gif",
+    "videoUrl": "videos/publications/optimized/sorting.mp4",
+    "posterUrl": "videos/publications/optimized/sorting.jpg",
     "title": "Unsupervised Representation Learning by Sorting Sequences",
     "description": "",
     "authors": "Hsin-Ying Lee, Jia-Bin Huang, Maneesh Kumar Singh, and Ming-Hsuan Yang",
     "venue": "ICCV 2017",
+    "year": 2017,
     "links": [
       {
         "url": "https://arxiv.org/abs/1708.01246",
@@ -772,6 +832,7 @@
     "description": "",
     "authors": "Chau-Chin Huang, Bo-Qiao Lin, Hsin-Ying Lee, Yao-Wen Chang, Kuo-Sheng Wu, and Jun-Zhi Yang",
     "venue": "DAC 2017",
+    "year": 2017,
     "links": [
       {
         "url": "https://ieeexplore.ieee.org/document/8060443",
@@ -786,6 +847,7 @@
     "description": "",
     "authors": "Jinshan Pan, Zhe Hu, Hsin-Ying Lee, and Ming-Hsuan Yang",
     "venue": "CVPR 2016",
+    "year": 2016,
     "links": [
       {
         "url": "https://pdfs.semanticscholar.org/8f34/d07c4490f00a6ee658d902e723eb3797f026.pdf",
@@ -800,6 +862,7 @@
     "description": "",
     "authors": "Chau-Chin Huang, Hsin-Ying Lee, Bo-Qiao Lin, Sheng-Wei Yang, Chin-Hao Chang, Szu-To Chen, Yao-Wen Chang",
     "venue": "ICCAD 2015",
+    "year": 2015,
     "links": [
       {
         "url": "http://media.wix.com/ugd/4e32a1_c25daca77a7d433bb7562ceb0a612c67.pdf",
@@ -818,6 +881,7 @@
     "description": "",
     "authors": "Shih-Lung Chao, Hsin-Ying Lee, Ching-Chun Chou, Hung-Yu Wei",
     "venue": "IEEE communications letters, 2013",
+    "year": 2013,
     "links": [
       {
         "url": "http://media.wix.com/ugd/4e32a1_9e374e2f28cd4422b63002238b184f91.pdf",

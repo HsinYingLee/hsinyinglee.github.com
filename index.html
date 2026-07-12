@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
   <!-- CSS  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Icons&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?v=20260601a">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons&amp;family=Outfit:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css?v=20260711a">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-  <title>Hsin-Ying Lee | CTO at illoca | AI, 3D & Architecture</title>
+  <title>Hsin-Ying Lee | CTO at illoca | AI, 3D &amp; Architecture</title>
   <meta name="description" content="Hsin-Ying Lee's personal homepage. CTO at illoca, building AI-native tools for architectural design, with research in Computer Vision, Machine Learning, and 2D/3D/4D generation.">
   <meta name="keywords" content="Hsin-Ying Lee, illoca, Tracing Paper, CTO, AI, 3D, Computer Vision, Machine Learning, Architecture, Snap Research">
   <meta name="theme-color" content="#16231f">
@@ -51,8 +51,10 @@
 </head>
 
 <body id="page-top">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <!-- Header -->
-  <div class="navbar-fixed">
+  <header class="navbar-fixed">
     <nav class="nav-custom" role="navigation" aria-label="Primary navigation">
       <div class="nav-wrapper">
         <a class="nav-brand" href="#page-top">Hsin-Ying Lee</a>
@@ -63,19 +65,30 @@
           <li><a class="page-scroll" href="#page-top">Home</a></li>
           <li><a class="page-scroll" href="#illoca">Illoca</a></li>
           <li><a class="page-scroll" href="#news">News</a></li>
-          <li><a class="page-scroll" href="#publication">Publication</a></li>
+          <li><a class="page-scroll" href="#publication">Publications</a></li>
           <li><a class="page-scroll" href="#education">Education</a></li>
         </ul>
       </div>
     </nav>
-  </div>
+  </header>
+
+  <main id="main-content">
 
   <!-- Home -->
   <section id="home" data-speed="0" data-type="background" class="home-section">
     <div class="container-profile">
       <div class="hero-shell">
         <div class="hero-portrait">
-          <img src="images/profile/me3.jpg" class="hero-avatar" alt="Hsin-Ying Lee">
+          <img
+            src="images/profile/me3.jpg"
+            srcset="images/profile/optimized/me3-420.webp 420w, images/profile/optimized/me3-840.webp 840w"
+            sizes="(max-width: 768px) 112px, 210px"
+            width="420"
+            height="420"
+            class="hero-avatar"
+            alt="Hsin-Ying Lee"
+            decoding="async"
+            fetchpriority="high">
         </div>
         <div class="hero-copy">
           <div class="hero-kicker">Hsin-Ying Lee</div>
@@ -93,7 +106,7 @@
           <div class="hero-contact">
             <span>hsinyinglee [at] illoca.com</span>
             <div class="hero-social">
-              <a href="https://scholar.google.com/citations?user=SeozinYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="social-icon">
+              <a href="https://scholar.google.com/citations?user=SeozinYAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="social-icon">
                 <img src="icons/googlescholar.png" alt="Google Scholar">
               </a>
               <a href="https://github.com/HsinYingLee" target="_blank" rel="noopener noreferrer" class="social-icon">
@@ -110,12 +123,12 @@
   </section>
 
   <!-- Illoca -->
-  <section id="illoca" class="illoca-section">
+  <section id="illoca" class="illoca-section" aria-labelledby="illoca-title">
     <div class="container">
       <div class="section-kicker">Current Work</div>
       <div class="illoca-layout">
         <div class="illoca-copy">
-          <h4>Building illoca Tracing Paper</h4>
+          <h2 id="illoca-title" class="section-title">Building illoca Tracing Paper</h2>
           <p class="illoca-lede">
             illoca is creating an intelligent canvas for architectural design: a way for architects to stay close to sketches, markups, references, and language while producing editable 2D and 3D design data.
           </p>
@@ -132,30 +145,28 @@
       </div>
 
       <div class="illoca-media" id="illoca-demos">
-        <div class="media-heading">
-          <span>App demos</span>
-        </div>
+        <h3 class="media-heading">App demos</h3>
         <div class="media-grid">
           <figure class="media-slot">
-            <video src="videos/illoca/optimized/prompted-plans.mp4" poster="videos/illoca/optimized/prompted-plans.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Prompted plans demo"></video>
+            <video src="videos/illoca/optimized/prompted-plans.mp4" poster="videos/illoca/optimized/prompted-plans.jpg" data-autoplay muted loop playsinline preload="none" width="1280" height="720" aria-label="Prompted plans demo"></video>
             <figcaption>
               <span>Prompted plans</span>
             </figcaption>
           </figure>
           <figure class="media-slot">
-            <video src="videos/illoca/optimized/adaptive-massing.mp4" poster="videos/illoca/optimized/adaptive-massing.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Adaptive massing demo"></video>
+            <video src="videos/illoca/optimized/adaptive-massing.mp4" poster="videos/illoca/optimized/adaptive-massing.jpg" data-autoplay muted loop playsinline preload="none" width="1280" height="720" aria-label="Adaptive massing demo"></video>
             <figcaption>
               <span>Adaptive massing</span>
             </figcaption>
           </figure>
           <figure class="media-slot">
-            <video src="videos/illoca/optimized/instant-facades.mp4" poster="videos/illoca/optimized/instant-facades.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Instant facades demo"></video>
+            <video src="videos/illoca/optimized/instant-facades.mp4" poster="videos/illoca/optimized/instant-facades.jpg" data-autoplay muted loop playsinline preload="none" width="1280" height="720" aria-label="Instant facades demo"></video>
             <figcaption>
               <span>Instant facades</span>
             </figcaption>
           </figure>
           <figure class="media-slot">
-            <video src="videos/illoca/optimized/agentic-refinement.mp4" poster="videos/illoca/optimized/agentic-refinement.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Agentic refinement demo"></video>
+            <video src="videos/illoca/optimized/agentic-refinement.mp4" poster="videos/illoca/optimized/agentic-refinement.jpg" data-autoplay muted loop playsinline preload="none" width="1280" height="720" aria-label="Agentic refinement demo"></video>
             <figcaption>
               <span>Agentic refinement</span>
             </figcaption>
@@ -167,11 +178,10 @@
 
 
   <!-- News -->
-  <section id="news" class="news-section">
+  <section id="news" class="news-section" aria-labelledby="news-title">
     <div class="container">
-      <h4>News</h4>
+      <h2 id="news-title" class="section-title">News</h2>
       <hr>
-      <div class="spacer"></div>
       <div class="news-container">
         <ul class="news-list news-recent">
           <li><i class="tiny material-icons" aria-hidden="true">work</i><span class="news-text">05/2026: <b>illoca came out of stealth mode</b> with Tracing Paper for AI-native architectural design.</span></li>
@@ -223,11 +233,10 @@
   </section>
 
   <!-- Publication -->
-  <section id="publication" class="publication-section">
+  <section id="publication" class="publication-section" aria-labelledby="publication-title">
     <div class="container">
-      <h4>Publications</h4>
+      <h2 id="publication-title" class="section-title">Publications</h2>
       <hr>
-      <div class="spacer"></div>
 
       <!-- Publication Categories -->
       <div class="pub-categories">
@@ -245,11 +254,10 @@
   </section>
 
   <!-- Education -->
-  <section id="education" class="education-section">
+  <section id="education" class="education-section" aria-labelledby="education-title">
     <div class="container">
-      <h4>Education</h4>
+      <h2 id="education-title" class="section-title">Education</h2>
       <hr>
-      <div class="spacer"></div>
 
       <div class="education-list">
         <article class="education-item">
@@ -284,6 +292,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container footer-layout">
@@ -295,7 +304,7 @@
         <a href="https://illoca.com/" target="_blank" rel="noopener noreferrer">illoca</a>
         <a href="https://www.instagram.com/app.illoca?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">Instagram</a>
         <a href="#publication">Selected research</a>
-        <a href="https://scholar.google.com/citations?user=SeozinYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://scholar.google.com/citations?user=SeozinYAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
         <a href="https://github.com/HsinYingLee" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://twitter.com/hyjameslee" target="_blank" rel="noopener noreferrer">Twitter</a>
       </div>
@@ -305,8 +314,8 @@
 
 
   <!--  Scripts-->
-  <script src="js/site.js?v=20260601a"></script>
-  <script src="js/publications.js?v=20260601a"></script>
+  <script src="js/site.js?v=20260711a"></script>
+  <script src="js/publications.js?v=20260711b"></script>
 
   </body>
 </html>

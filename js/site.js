@@ -42,13 +42,10 @@ const initNavigation = () => {
 };
 
 const initAutoplayMedia = () => {
-  const videos = Array.from(document.querySelectorAll('video[autoplay]'));
-
-  if (!videos.length) {
-    return;
-  }
-
   const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const registeredVideos = new Set();
+  let observer = null;
+
   const playVideo = video => {
     const playPromise = video.play();
 
@@ -58,6 +55,10 @@ const initAutoplayMedia = () => {
   };
 
   const syncVideo = video => {
+    if (!video.isConnected) {
+      return;
+    }
+
     if (reducedMotionQuery.matches) {
       video.pause();
       return;
@@ -70,29 +71,50 @@ const initAutoplayMedia = () => {
     }
   };
 
-  videos.forEach(video => {
-    video.dataset.inView = 'false';
-    syncVideo(video);
-  });
-
   if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(entries => {
+    observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         entry.target.dataset.inView = String(entry.isIntersecting);
         syncVideo(entry.target);
       });
     }, { threshold: 0.2 });
-
-    videos.forEach(video => observer.observe(video));
-  } else {
-    videos.forEach(video => {
-      video.dataset.inView = 'true';
-      syncVideo(video);
-    });
   }
 
+  const unregisterDisconnectedVideos = () => {
+    registeredVideos.forEach(video => {
+      if (video.isConnected) {
+        return;
+      }
+
+      observer?.unobserve(video);
+      registeredVideos.delete(video);
+    });
+  };
+
+  const registerVideos = (root = document) => {
+    unregisterDisconnectedVideos();
+
+    const videos = Array.from(root.querySelectorAll('video[data-autoplay]'));
+    videos.forEach(video => {
+      if (registeredVideos.has(video)) {
+        return;
+      }
+
+      video.dataset.inView = 'false';
+      video.pause();
+      registeredVideos.add(video);
+
+      if (observer) {
+        observer.observe(video);
+      } else {
+        video.dataset.inView = 'true';
+        syncVideo(video);
+      }
+    });
+  };
+
   const handleMotionChange = () => {
-    videos.forEach(syncVideo);
+    registeredVideos.forEach(syncVideo);
   };
 
   if (typeof reducedMotionQuery.addEventListener === 'function') {
@@ -100,6 +122,12 @@ const initAutoplayMedia = () => {
   } else {
     reducedMotionQuery.addListener(handleMotionChange);
   }
+
+  document.addEventListener('site:media-updated', event => {
+    registerVideos(event.detail?.root ?? document);
+  });
+
+  registerVideos();
 };
 
 const initSite = () => {
