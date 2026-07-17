@@ -129,3 +129,10 @@ div.horizontalgap {
     font-weight: bold;
     color: DarkBlue ;
 }
+
+video.responsive-img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}

@@ -1,4 +1,4 @@
-const PUBLICATIONS_DATA_URL = 'data/publications.json?v=20260711b';
+const PUBLICATIONS_DATA_URL = 'data/publications.json?v=20260717a';
 
 document.addEventListener('DOMContentLoaded', async () => {
   const container = document.getElementById('publications-container');

@@ -359,7 +359,7 @@
     "featured": true
   },
   {
-    "imageUrl": "images/publications/iclr23_ppp.png",
+    "imageUrl": "images/publications/icml23_ppp.png",
     "title": "Unveiling The Mask of Position-Information Pattern Through the Mist of Image Features",
     "description": "",
     "authors": "Chieh Hubert Lin, Hung-Yu Tseng, Hsin-Ying Lee, Maneesh Kumar Singh, Ming-Hsuan Yang",
@@ -796,7 +796,7 @@
     "year": 2018,
     "links": [
       {
-        "url": "http://faculty.ucmerced.edu/mhyang/papers/eccv2018_subgan.pdf",
+        "url": "https://faculty.ucmerced.edu/mhyang/papers/eccv2018_subgan.pdf",
         "text": "Paper"
       }
     ],
@@ -820,7 +820,7 @@
         "text": "Project Page"
       },
       {
-        "url": "http://github.com/HsinYingLee/OPN",
+        "url": "https://github.com/HsinYingLee/OPN",
         "text": "Code"
       }
     ],
@@ -865,11 +865,11 @@
     "year": 2015,
     "links": [
       {
-        "url": "http://media.wix.com/ugd/4e32a1_c25daca77a7d433bb7562ceb0a612c67.pdf",
+        "url": "https://media.wix.com/ugd/4e32a1_c25daca77a7d433bb7562ceb0a612c67.pdf",
         "text": "PDF"
       },
       {
-        "url": "http://www.ispd.cc/contests/15/ispd2015contest.html",
+        "url": "https://www.ispd.cc/contests/15/ispd2015contest.html",
         "text": "Contest Page"
       }
     ],
@@ -884,7 +884,7 @@
     "year": 2013,
     "links": [
       {
-        "url": "http://media.wix.com/ugd/4e32a1_9e374e2f28cd4422b63002238b184f91.pdf",
+        "url": "https://media.wix.com/ugd/4e32a1_9e374e2f28cd4422b63002238b184f91.pdf",
         "text": "PDF"
       }
     ],

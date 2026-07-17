@@ -94,3 +94,10 @@ pre{
     font-weight: bold;
     color: red;
 }
+
+video.responsive-img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}

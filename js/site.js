@@ -41,6 +41,55 @@ const initNavigation = () => {
   }
 };
 
+const initSectionHighlight = () => {
+  const links = Array.from(document.querySelectorAll('.nav-menu a[href^="#"]'));
+  if (!links.length) {
+    return;
+  }
+
+  const sections = links
+    .map(link => {
+      const id = link.getAttribute('href')?.slice(1);
+      if (!id || id === 'page-top') {
+        return { link, section: document.getElementById('home') };
+      }
+      return { link, section: document.getElementById(id) };
+    })
+    .filter(item => item.section);
+
+  if (!sections.length) {
+    return;
+  }
+
+  const setActive = activeLink => {
+    links.forEach(link => {
+      link.classList.toggle('active', link === activeLink);
+    });
+  };
+
+  const updateActiveSection = () => {
+    const offset = 120;
+    const marker = window.scrollY + offset;
+    let current = sections[0];
+
+    for (const item of sections) {
+      if (item.section.offsetTop <= marker) {
+        current = item;
+      }
+    }
+
+    // Near the bottom of the page, keep the last section active.
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+      current = sections[sections.length - 1];
+    }
+
+    setActive(current.link);
+  };
+
+  window.addEventListener('scroll', updateActiveSection, { passive: true });
+  updateActiveSection();
+};
+
 const initAutoplayMedia = () => {
   const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
   const registeredVideos = new Set();
@@ -132,6 +181,7 @@ const initAutoplayMedia = () => {
 
 const initSite = () => {
   initNavigation();
+  initSectionHighlight();
   initAutoplayMedia();
 };
 
