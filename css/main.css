@@ -567,70 +567,6 @@ hr {
   text-transform: uppercase;
 }
 
-.illoca-layout {
-  max-width: 980px;
-}
-
-.illoca-copy .section-title {
-  color: var(--color-ink);
-  font-family: var(--font-body);
-  font-size: 2.1rem;
-  font-weight: 600;
-  line-height: 1.15;
-  margin: 0 0 18px;
-}
-
-.illoca-copy p {
-  color: var(--color-text-soft);
-  font-family: var(--font-body);
-  font-size: 1.05rem;
-  line-height: 1.7;
-  margin: 0 0 16px;
-}
-
-.illoca-copy .illoca-lede {
-  color: var(--color-text);
-  font-size: 1.22rem;
-  line-height: 1.62;
-}
-
-.illoca-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 24px;
-}
-
-.illoca-actions a {
-  align-items: center;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  color: var(--color-text);
-  display: inline-flex;
-  font-family: var(--font-body);
-  font-weight: 600;
-  min-height: 42px;
-  padding: 9px 16px;
-  transition: all 0.2s ease;
-}
-
-.illoca-actions a:first-child {
-  background: var(--color-text);
-  border-color: var(--color-text);
-  color: var(--color-surface);
-}
-
-.illoca-actions a:hover {
-  box-shadow: 0 8px 18px rgba(36, 49, 45, 0.12);
-  transform: translateY(-1px);
-}
-
-.illoca-media {
-  border-top: 1px solid var(--color-border-soft);
-  margin-top: 40px;
-  padding-top: 26px;
-}
-
 .media-heading {
   color: var(--color-ink);
   font-family: var(--font-body);
@@ -677,6 +613,260 @@ hr {
   font-size: 1rem;
   font-weight: 700;
   margin: 0;
+}
+
+/* Illoca products */
+.illoca-intro {
+  margin-bottom: 32px;
+  max-width: 920px;
+}
+
+.illoca-intro .section-title {
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 2.1rem;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 18px;
+}
+
+.illoca-intro .illoca-lede {
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 1.22rem;
+  line-height: 1.62;
+  margin: 0;
+}
+
+.illoca-section .product-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.illoca-section .product-card {
+  border: 1px solid var(--color-border-soft);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(63, 54, 45, 0.07);
+  min-width: 0;
+}
+
+.illoca-section .product-card-plamo,
+.illoca-section .product-card-tracing {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  padding: 28px;
+}
+
+.illoca-section .product-card-plamo {
+  background: #FDF8F0;
+  border-color: #EADFC9;
+}
+
+.illoca-section .product-card-tracing {
+  background: var(--color-surface);
+}
+
+.illoca-section .product-card-copy,
+.illoca-section .product-card-media {
+  min-width: 0;
+}
+
+.illoca-section .product-card-copy {
+  align-self: center;
+}
+
+.illoca-section .product-status {
+  color: var(--color-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.illoca-section .product-card-plamo .product-status {
+  color: #3B60C5;
+}
+
+.illoca-section .product-card h3 {
+  color: var(--color-ink);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 14px;
+}
+
+.illoca-section .product-description {
+  color: var(--color-text-soft);
+  font-size: 1.02rem;
+  line-height: 1.65;
+  margin: 0 0 14px;
+}
+
+.illoca-section .product-features {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  list-style: none;
+  margin: 22px 0 24px;
+  padding: 0;
+}
+
+.illoca-section .product-features li {
+  background: rgba(59, 96, 197, 0.06);
+  border: 1px solid rgba(59, 96, 197, 0.2);
+  border-radius: 6px;
+  color: #3B60C5;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 10px;
+}
+
+.illoca-section .product-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.illoca-section .product-actions a {
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text);
+  display: inline-flex;
+  font-size: 0.92rem;
+  font-weight: 600;
+  justify-content: center;
+  min-height: 40px;
+  padding: 8px 13px;
+  transition: all 0.2s ease;
+}
+
+.illoca-section .product-actions a:hover {
+  box-shadow: 0 8px 18px rgba(36, 49, 45, 0.12);
+  transform: translateY(-1px);
+}
+
+.illoca-section .product-card-plamo .product-actions a:first-child {
+  background: #3B60C5;
+  border-color: #3B60C5;
+  color: var(--color-surface);
+}
+
+.illoca-section .product-card-plamo .product-actions a:not(:first-child) {
+  border-color: #3B60C5;
+  color: #3B60C5;
+}
+
+.illoca-section .product-card-tracing .product-actions a:first-child {
+  background: var(--color-text);
+  border-color: var(--color-text);
+  color: var(--color-surface);
+}
+
+.illoca-section .product-card-media > video {
+  aspect-ratio: 16 / 9;
+  background: var(--color-ink);
+  border-radius: 10px;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.illoca-section .plamo-projects {
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid #EADFC9;
+  border-radius: 12px;
+  grid-column: 1 / -1;
+  padding: 16px;
+}
+
+.illoca-section .plamo-projects-heading {
+  margin-bottom: 14px;
+}
+
+.illoca-section .plamo-projects-heading .product-status {
+  margin-bottom: 5px;
+}
+
+.illoca-section .plamo-projects-heading h4 {
+  color: var(--color-ink);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.illoca-section .plamo-project-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.illoca-section .plamo-project-card {
+  background: var(--color-surface);
+  border: 1px solid #EADFC9;
+  border-radius: 9px;
+  color: var(--color-ink);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  padding-bottom: 12px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.illoca-section .plamo-project-card:hover {
+  box-shadow: 0 10px 22px rgba(36, 49, 45, 0.12);
+  transform: translateY(-2px);
+}
+
+.illoca-section .plamo-project-card video {
+  aspect-ratio: 9 / 16;
+  background: #050706;
+  display: block;
+  height: auto;
+  margin-bottom: 11px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.illoca-section .plamo-project-index,
+.illoca-section .plamo-project-card strong {
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+.illoca-section .plamo-project-index {
+  color: #3B60C5;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+
+.illoca-section .plamo-project-card strong {
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.illoca-section .plamo-project-link {
+  color: #3B60C5;
+  font-size: 0.76rem;
+  font-weight: 700;
+  margin: auto 11px 0;
+  padding-top: 7px;
+}
+
+.illoca-section .tracing-paper-media {
+  align-self: center;
+}
+
+.illoca-section .tracing-paper-media .media-heading {
+  margin-bottom: 14px;
 }
 
 .publication-scope {
@@ -921,8 +1111,8 @@ hr {
 }
 
 .news-recent {
-  display: grid;
   column-gap: 42px;
+  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -1094,6 +1284,14 @@ hr {
   grid-column: 1 / -1;
 }
 
+@media screen and (max-width: 900px) {
+  .illoca-section .product-card-plamo,
+  .illoca-section .product-card-tracing {
+    grid-template-columns: 1fr;
+  }
+
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -1234,16 +1432,39 @@ hr {
     padding: 48px 0;
   }
 
-  .media-grid {
-    grid-template-columns: 1fr;
+  .illoca-intro {
+    margin-bottom: 24px;
   }
 
-  .illoca-copy .section-title {
+  .illoca-intro .section-title {
     font-size: 1.75rem;
   }
 
-  .illoca-copy .illoca-lede {
+  .illoca-intro .illoca-lede {
     font-size: 1.08rem;
+  }
+
+  .illoca-section .product-card-plamo,
+  .illoca-section .product-card-tracing {
+    gap: 20px;
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .illoca-section .product-card h3 {
+    font-size: 1.7rem;
+  }
+
+  .illoca-section .product-features {
+    grid-template-columns: 1fr;
+  }
+
+  .illoca-section .product-actions a {
+    flex: 1 1 100%;
+  }
+
+  .media-grid {
+    grid-template-columns: 1fr;
   }
 
   .publication-scope {
@@ -1296,6 +1517,10 @@ hr {
     grid-template-columns: 1fr;
   }
 
+  .illoca-section .plamo-project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .news-list li {
     white-space: normal;
     /* Allow wrapping on mobile */
@@ -1325,5 +1550,11 @@ hr {
 
   .footer-links {
     justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .illoca-section .plamo-project-grid {
+    grid-template-columns: 1fr;
   }
 }
